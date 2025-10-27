@@ -8,4 +8,4 @@ The structure of the repository is as follows:
 |- nvidia_drivers – Script for installing Nvidia drivers and CUDA on Ubuntu 22.04/24.04
 ```
 
-Please send the test results in the `-t test` format through the Issues section, providing details about the configuration of the software being tested.
+Please send the test results in the `-t test` mode through the Issues section, providing details about the configuration of the hardware for system being tested.
