@@ -138,8 +138,8 @@ for cmd in jq bc; do
     fi
 done
 
-if ! command -v ollama >/dev/null 2>&1; then
-    echo "Installing Ollama..."
+if ! command -v ollama >/dev/null 2>&1 || ! systemctl is-active --quiet ollama 2>/dev/null; then
+    echo "Install or reinstall Ollama..."
     curl -fsSL https://ollama.com/install.sh | sh
 fi
 
