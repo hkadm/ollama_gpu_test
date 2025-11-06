@@ -4,8 +4,9 @@ The structure of the repository is as follows:
 
 ```bash
 |
-|- nvidia_test – Testing script for Nvidia RTX graphics cards
 |- nvidia_drivers – Script for installing Nvidia drivers and CUDA on Ubuntu 22.04/24.04
+|- nvidia_test – Testing script for Nvidia RTX graphics cards
+|- test_result - HTML files with result table
 ```
 
 Please send the test results in the `-t test` mode through the Issues section, providing details about the configuration of the hardware for system being tested.
