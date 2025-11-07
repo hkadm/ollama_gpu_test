@@ -1,7 +1,7 @@
 # Basic Performance Metrics for Testing Nvidia Video Cards
 
 The value of speed in (tokens per second) does not depend on the size of `ctx`.
-
+Prompt: Generate Tetris game on HTML and JS.
 
 | GPU                              | Model             | Tokens/sec (average) | max ctx | Load (sec) average | Generate (sec) average | Note |
 |----------------------------------|-------------------|----------------------|---------|--------------------|------------------------|------|
