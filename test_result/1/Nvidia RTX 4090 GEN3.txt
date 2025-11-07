@@ -1,0 +1,196 @@
+<html><head><title>Ollama Test Report — Group: deepseekr1</title></head><body>
+<h1>Ollama Model Test Report — Group: deepseekr1</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context (ctx)</th>
+<th>Load (sec)</th>
+<th>Generate (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>4000</td>
+        <td>7.228</td>
+        <td>31.504</td>
+        <td>2629</td>
+        <td>83.44</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    10 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  9891 MiB     24564 MiB    36°C        320.26 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>8000</td>
+        <td>7.203</td>
+        <td>37.742</td>
+        <td>3128</td>
+        <td>82.87</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    11 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  11119 MiB    24564 MiB    40°C        308.00 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>12000</td>
+        <td>7.199</td>
+        <td>29.629</td>
+        <td>2475</td>
+        <td>83.53</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    12 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  12343 MiB    24564 MiB    42°C        320.30 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>16000</td>
+        <td>7.267</td>
+        <td>31.722</td>
+        <td>2636</td>
+        <td>83.09</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    13 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  13571 MiB    24564 MiB    44°C        318.61 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>20000</td>
+        <td>7.281</td>
+        <td>30.160</td>
+        <td>2519</td>
+        <td>83.52</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  14797 MiB    24564 MiB    44°C        327.27 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>24000</td>
+        <td>7.319</td>
+        <td>34.382</td>
+        <td>2849</td>
+        <td>82.86</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    16 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  16023 MiB    24564 MiB    44°C        316.56 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>28000</td>
+        <td>7.311</td>
+        <td>43.212</td>
+        <td>3551</td>
+        <td>82.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    17 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  17251 MiB    24564 MiB    45°C        321.74 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>32000</td>
+        <td>7.289</td>
+        <td>34.986</td>
+        <td>2906</td>
+        <td>83.06</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    18 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  18477 MiB    24564 MiB    45°C        325.42 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>36000</td>
+        <td>7.384</td>
+        <td>37.085</td>
+        <td>3074</td>
+        <td>82.89</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    19 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  19705 MiB    24564 MiB    45°C        337.18 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>40000</td>
+        <td>7.316</td>
+        <td>28.842</td>
+        <td>2413</td>
+        <td>83.66</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    20 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  20929 MiB    24564 MiB    44°C        323.15 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>44000</td>
+        <td>7.427</td>
+        <td>27.324</td>
+        <td>2288</td>
+        <td>83.73</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    21 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  22155 MiB    24564 MiB    44°C        327.84 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>48000</td>
+        <td>7.428</td>
+        <td>37.331</td>
+        <td>3091</td>
+        <td>82.79</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    22 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  23383 MiB    24564 MiB    44°C        338.03 W     450.00 W   </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>4000</td>
+        <td>9.180</td>
+        <td>56.365</td>
+        <td>2311</td>
+        <td>41.00</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    21 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  20505 MiB    24564 MiB    41°C        330.36 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>8000</td>
+        <td>9.148</td>
+        <td>62.408</td>
+        <td>2553</td>
+        <td>40.90</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    23 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  21981 MiB    24564 MiB    46°C        338.67 W     450.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>12000</td>
+        <td>9.236</td>
+        <td>57.086</td>
+        <td>2337</td>
+        <td>40.93</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    24 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA GeForce RTX 4090  23457 MiB    24564 MiB    47°C        332.81 W     450.00 W   </pre></td>
+    </tr>
+</table></body></html>
