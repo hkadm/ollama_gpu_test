@@ -1,26 +1,28 @@
 #!/bin/bash
 
-# Проверяем, передан ли файл как аргумент
+# Check if a file has been passed as an argument
 if [ $# -ne 1 ]; then
-    echo "Использование: $0 <html_file>"
+    echo "Usage: $0 <html_file>"
     exit 1
 fi
 
+# Set the HTML file path to the first argument
 HTML_FILE="$1"
 
-# Проверяем, существует ли файл
+# Verify if the HTML file exists
 if [ ! -f "$HTML_FILE" ]; then
-    echo "Файл $HTML_FILE не найден!"
+    echo "The file $HTML_FILE was not found!"
     exit 1
 fi
 
-# Создаём временный файл
+# Create a temporary file for storing the modified content
 TEMP_FILE=$(mktemp)
 
-# Удаляем строки, содержащие нужную подстроку
-grep -vF '<td><a href="/root/gpu_test/tetris_deepseek-r1' "$HTML_FILE" > "$TEMP_FILE"
+# Use grep to remove lines containing the specified text pattern
+grep -vF '<td><a href="/root/gpu_test/tetris_deepseek-r1'" "$HTML_FILE" > "$TEM_FILE"
 
-# Перемещаем временный файл на место оригинального
-mv "$TEMP_FILE" "$HTML_FILE"
+# Replace the original HTML file with the temporary file
+mv "$TEM_FILE" "$HTML_FILE"
 
-echo "Обработка завершена. Строки, содержащие подстроку, удалены из $HTML_FILE"
+# Inform the user that the processing is complete and that the specified lines have been removed
+echo "Processing completed. Lines containing the specified text pattern have been removed from $HTML_FILE."

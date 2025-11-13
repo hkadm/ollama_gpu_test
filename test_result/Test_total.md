@@ -3,8 +3,11 @@
 The value of speed in (tokens per second) does not depend on the size of `ctx`.
 Prompt: Generate Tetris game on HTML and JS.
 
-| GPU                              | Model             | Tokens/sec (average) | max ctx | Load (sec) average | Generate (sec) average | Note |
-|----------------------------------|-------------------|----------------------|---------|--------------------|------------------------|------|
+| GPU                              | Model             | Tokens/sec (average) | max ctx | Load (sec) average | Generate (sec) average |Note |
+|----------------------------------|-------------------|----------------------|---------|--------------------|------------------------|-----|
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:14b   | 114.02           | 128 000 | 1.74               | 22.71                  |     |
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:32b   | 58.73            | 128 000 | 2.44               | 42.91                  |     |
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:70b   | 30.19            | 112 000 | 4.5                | 84,23                  |     |
 | 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:14b   | 127.09               | 72 000  | 3.99               | 19.78                  | model does not scale to the second GPU |
 | 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:32b   | 65.10                | 32 000  | 5.29               | 37.30                  | model does not scale to the second GPU |
 | 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:70b   | 33.35                | 28 000  | 8.39               | 75.41                  |      |

@@ -1,0 +1,1127 @@
+
+<html><head><title>Ollama Test Report — Group: deepseekr1</title></head><body>
+<h1>Ollama Model Test Report — Group: deepseekr1</h1>
+<p><strong>Промт:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context (ctx)</th>
+<th>Load (sec)</th>
+<th>Generate (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>4000</td>
+        <td>1.755</td>
+        <td>19.961</td>
+        <td>2259</td>
+        <td>113.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    10 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  10067 MiB    97887 MiB    45°C        358.54 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>8000</td>
+        <td>1.737</td>
+        <td>22.630</td>
+        <td>2578</td>
+        <td>113.92</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    11 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  11293 MiB    97887 MiB    47°C        355.24 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>12000</td>
+        <td>1.746</td>
+        <td>24.886</td>
+        <td>2832</td>
+        <td>113.79</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    12 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  12517 MiB    97887 MiB    56°C        389.36 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>16000</td>
+        <td>1.741</td>
+        <td>24.098</td>
+        <td>2744</td>
+        <td>113.87</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    13 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  13745 MiB    97887 MiB    58°C        395.23 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>20000</td>
+        <td>1.739</td>
+        <td>23.845</td>
+        <td>2720</td>
+        <td>114.06</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  14973 MiB    97887 MiB    59°C        397.72 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>24000</td>
+        <td>1.745</td>
+        <td>19.490</td>
+        <td>2235</td>
+        <td>114.67</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    16 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  16199 MiB    97887 MiB    61°C        366.19 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>28000</td>
+        <td>1.747</td>
+        <td>18.775</td>
+        <td>2154</td>
+        <td>114.72</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    17 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  17427 MiB    97887 MiB    61°C        366.95 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>32000</td>
+        <td>1.736</td>
+        <td>25.374</td>
+        <td>2879</td>
+        <td>113.46</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    18 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  18651 MiB    97887 MiB    59°C        376.68 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>36000</td>
+        <td>1.752</td>
+        <td>21.377</td>
+        <td>2445</td>
+        <td>114.37</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    19 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  19877 MiB    97887 MiB    60°C        377.41 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>40000</td>
+        <td>1.748</td>
+        <td>21.410</td>
+        <td>2445</td>
+        <td>114.20</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    20 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  21105 MiB    97887 MiB    62°C        408.13 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>44000</td>
+        <td>1.747</td>
+        <td>23.356</td>
+        <td>2659</td>
+        <td>113.84</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    21 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  22331 MiB    97887 MiB    60°C        377.54 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>48000</td>
+        <td>1.739</td>
+        <td>24.527</td>
+        <td>2788</td>
+        <td>113.67</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    22 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  23557 MiB    97887 MiB    61°C        381.43 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>52000</td>
+        <td>1.735</td>
+        <td>21.725</td>
+        <td>2482</td>
+        <td>114.24</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    24 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  24785 MiB    97887 MiB    65°C        404.24 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>56000</td>
+        <td>1.740</td>
+        <td>23.102</td>
+        <td>2634</td>
+        <td>114.01</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    25 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  26011 MiB    97887 MiB    63°C        408.75 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>60000</td>
+        <td>1.748</td>
+        <td>23.023</td>
+        <td>2622</td>
+        <td>113.88</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    26 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  27237 MiB    97887 MiB    65°C        410.93 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>64000</td>
+        <td>1.739</td>
+        <td>21.493</td>
+        <td>2457</td>
+        <td>114.31</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    27 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  28463 MiB    97887 MiB    61°C        373.03 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>68000</td>
+        <td>1.743</td>
+        <td>18.830</td>
+        <td>2164</td>
+        <td>114.92</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    28 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  29689 MiB    97887 MiB    65°C        404.03 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>72000</td>
+        <td>1.736</td>
+        <td>23.515</td>
+        <td>2680</td>
+        <td>113.97</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    29 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  30915 MiB    97887 MiB    61°C        379.55 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>76000</td>
+        <td>1.736</td>
+        <td>26.133</td>
+        <td>2962</td>
+        <td>113.34</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    30 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  32143 MiB    97887 MiB    63°C        388.99 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>80000</td>
+        <td>1.746</td>
+        <td>26.916</td>
+        <td>3052</td>
+        <td>113.39</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    31 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  33371 MiB    97887 MiB    62°C        384.20 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>84000</td>
+        <td>1.737</td>
+        <td>24.915</td>
+        <td>2829</td>
+        <td>113.54</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    33 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  34597 MiB    97887 MiB    66°C        403.36 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>88000</td>
+        <td>1.732</td>
+        <td>26.107</td>
+        <td>2963</td>
+        <td>113.49</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    34 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  35825 MiB    97887 MiB    62°C        377.85 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>92000</td>
+        <td>1.735</td>
+        <td>22.786</td>
+        <td>2594</td>
+        <td>113.84</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    35 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  37051 MiB    97887 MiB    62°C        378.30 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>96000</td>
+        <td>1.750</td>
+        <td>23.284</td>
+        <td>2653</td>
+        <td>113.94</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    36 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  38277 MiB    97887 MiB    61°C        378.32 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>100000</td>
+        <td>1.738</td>
+        <td>21.401</td>
+        <td>2446</td>
+        <td>114.29</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    37 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  39501 MiB    97887 MiB    62°C        382.02 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>104000</td>
+        <td>1.743</td>
+        <td>20.080</td>
+        <td>2300</td>
+        <td>114.54</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    38 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  40731 MiB    97887 MiB    66°C        407.59 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>108000</td>
+        <td>1.737</td>
+        <td>22.982</td>
+        <td>2617</td>
+        <td>113.87</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    39 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  41957 MiB    97887 MiB    62°C        384.57 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>112000</td>
+        <td>1.740</td>
+        <td>20.953</td>
+        <td>2399</td>
+        <td>114.49</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    41 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  43183 MiB    97887 MiB    61°C        380.90 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>116000</td>
+        <td>1.744</td>
+        <td>20.945</td>
+        <td>2399</td>
+        <td>114.54</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    42 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  44409 MiB    97887 MiB    65°C        377.15 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>120000</td>
+        <td>1.739</td>
+        <td>24.259</td>
+        <td>2764</td>
+        <td>113.93</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    43 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  45637 MiB    97887 MiB    62°C        380.68 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>124000</td>
+        <td>1.742</td>
+        <td>23.078</td>
+        <td>2635</td>
+        <td>114.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    44 GB    100% GPU     124000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  46861 MiB    97887 MiB    63°C        383.61 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>128000</td>
+        <td>1.749</td>
+        <td>21.605</td>
+        <td>2466</td>
+        <td>114.13</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  48089 MiB    97887 MiB    61°C        376.08 W     600.00 W   </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>4000</td>
+        <td>2.410</td>
+        <td>39.556</td>
+        <td>2330</td>
+        <td>58.90</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    21 GB    100% GPU     4000       4 minutes from now
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     3 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  68760 MiB    97887 MiB    62°C        427.92 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>8000</td>
+        <td>2.377</td>
+        <td>41.109</td>
+        <td>2416</td>
+        <td>58.77</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    23 GB    100% GPU     8000       4 minutes from now
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     2 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  70238 MiB    97887 MiB    67°C        436.18 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>12000</td>
+        <td>2.367</td>
+        <td>47.126</td>
+        <td>2763</td>
+        <td>58.62</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    24 GB    100% GPU     12000      4 minutes from now
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     About a minute from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  71714 MiB    97887 MiB    73°C        464.17 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>16000</td>
+        <td>2.373</td>
+        <td>33.938</td>
+        <td>2005</td>
+        <td>59.07</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    25 GB    100% GPU     16000      4 minutes from now
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     About a minute from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  73192 MiB    97887 MiB    69°C        433.02 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>20000</td>
+        <td>2.371</td>
+        <td>46.635</td>
+        <td>2734</td>
+        <td>58.62</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    27 GB    100% GPU     20000      4 minutes from now
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     128000     24 seconds from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  74668 MiB    97887 MiB    75°C        469.11 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>24000</td>
+        <td>2.361</td>
+        <td>58.284</td>
+        <td>3392</td>
+        <td>58.19</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    28 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  28059 MiB    97887 MiB    73°C        446.10 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>28000</td>
+        <td>2.488</td>
+        <td>42.157</td>
+        <td>2475</td>
+        <td>58.70</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    30 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  29537 MiB    97887 MiB    77°C        436.74 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>32000</td>
+        <td>2.499</td>
+        <td>41.372</td>
+        <td>2431</td>
+        <td>58.75</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    31 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  31013 MiB    97887 MiB    76°C        471.85 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>36000</td>
+        <td>2.494</td>
+        <td>37.716</td>
+        <td>2224</td>
+        <td>58.96</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    32 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  32489 MiB    97887 MiB    72°C        433.96 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>40000</td>
+        <td>2.494</td>
+        <td>46.636</td>
+        <td>2734</td>
+        <td>58.62</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    34 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  33965 MiB    97887 MiB    77°C        475.21 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>44000</td>
+        <td>2.501</td>
+        <td>51.780</td>
+        <td>3024</td>
+        <td>58.40</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    35 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  35441 MiB    97887 MiB    77°C        474.86 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>48000</td>
+        <td>2.490</td>
+        <td>44.039</td>
+        <td>2587</td>
+        <td>58.74</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    37 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  36919 MiB    97887 MiB    74°C        442.60 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>52000</td>
+        <td>2.497</td>
+        <td>45.389</td>
+        <td>2661</td>
+        <td>58.62</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    38 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  38397 MiB    97887 MiB    77°C        476.76 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>56000</td>
+        <td>2.492</td>
+        <td>42.032</td>
+        <td>2473</td>
+        <td>58.83</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    39 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  39873 MiB    97887 MiB    73°C        442.33 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>60000</td>
+        <td>2.504</td>
+        <td>37.395</td>
+        <td>2206</td>
+        <td>58.99</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    41 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  41349 MiB    97887 MiB    74°C        452.03 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>64000</td>
+        <td>2.505</td>
+        <td>41.558</td>
+        <td>2443</td>
+        <td>58.78</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    42 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  42825 MiB    97887 MiB    73°C        437.30 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>68000</td>
+        <td>2.492</td>
+        <td>48.085</td>
+        <td>2818</td>
+        <td>58.60</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    44 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  44301 MiB    97887 MiB    78°C        441.09 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>72000</td>
+        <td>2.499</td>
+        <td>46.999</td>
+        <td>2755</td>
+        <td>58.61</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    45 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  45777 MiB    97887 MiB    74°C        444.24 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>76000</td>
+        <td>2.497</td>
+        <td>42.267</td>
+        <td>2482</td>
+        <td>58.72</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    46 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  47253 MiB    97887 MiB    74°C        450.99 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>80000</td>
+        <td>2.500</td>
+        <td>41.765</td>
+        <td>2453</td>
+        <td>58.73</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    48 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  48733 MiB    97887 MiB    73°C        442.78 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>84000</td>
+        <td>2.492</td>
+        <td>41.090</td>
+        <td>2416</td>
+        <td>58.79</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    49 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  50209 MiB    97887 MiB    77°C        439.46 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>88000</td>
+        <td>2.496</td>
+        <td>35.156</td>
+        <td>2076</td>
+        <td>59.05</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    51 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  51685 MiB    97887 MiB    72°C        436.48 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>92000</td>
+        <td>2.496</td>
+        <td>43.675</td>
+        <td>2567</td>
+        <td>58.77</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    52 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  53161 MiB    97887 MiB    73°C        442.29 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>96000</td>
+        <td>2.495</td>
+        <td>41.188</td>
+        <td>2418</td>
+        <td>58.70</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    53 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  54637 MiB    97887 MiB    77°C        438.31 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>100000</td>
+        <td>2.493</td>
+        <td>41.555</td>
+        <td>2446</td>
+        <td>58.86</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    55 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  56113 MiB    97887 MiB    77°C        474.17 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>104000</td>
+        <td>2.497</td>
+        <td>46.740</td>
+        <td>2737</td>
+        <td>58.55</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    56 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  57591 MiB    97887 MiB    74°C        454.04 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>108000</td>
+        <td>2.497</td>
+        <td>37.383</td>
+        <td>2203</td>
+        <td>58.93</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    58 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  59067 MiB    97887 MiB    74°C        449.09 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>112000</td>
+        <td>2.497</td>
+        <td>42.717</td>
+        <td>2509</td>
+        <td>58.73</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    59 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  60545 MiB    97887 MiB    78°C        474.24 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>116000</td>
+        <td>2.260</td>
+        <td>42.862</td>
+        <td>2516</td>
+        <td>58.69</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    60 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  62021 MiB    97887 MiB    75°C        467.53 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>120000</td>
+        <td>2.244</td>
+        <td>40.632</td>
+        <td>2391</td>
+        <td>58.84</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    62 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  63497 MiB    97887 MiB    78°C        441.99 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>124000</td>
+        <td>2.248</td>
+        <td>41.703</td>
+        <td>2448</td>
+        <td>58.70</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    63 GB    100% GPU     124000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  64975 MiB    97887 MiB    74°C        459.03 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>128000</td>
+        <td>2.244</td>
+        <td>42.657</td>
+        <td>2503</td>
+        <td>58.67</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    65 GB    100% GPU     128000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  66451 MiB    97887 MiB    78°C        439.62 W     600.00 W   </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>4000</td>
+        <td>4.303</td>
+        <td>69.424</td>
+        <td>2104</td>
+        <td>30.30</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    44 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  42705 MiB    97887 MiB    71°C        483.06 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>8000</td>
+        <td>4.279</td>
+        <td>83.900</td>
+        <td>2537</td>
+        <td>30.23</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    46 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  44713 MiB    97887 MiB    79°C        494.13 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>12000</td>
+        <td>4.287</td>
+        <td>84.417</td>
+        <td>2549</td>
+        <td>30.19</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    48 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  46721 MiB    97887 MiB    84°C        523.18 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>16000</td>
+        <td>4.279</td>
+        <td>82.560</td>
+        <td>2494</td>
+        <td>30.20</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    50 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  48729 MiB    97887 MiB    80°C        477.36 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>20000</td>
+        <td>4.285</td>
+        <td>88.454</td>
+        <td>2670</td>
+        <td>30.18</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    52 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  50737 MiB    97887 MiB    85°C        468.98 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>24000</td>
+        <td>4.290</td>
+        <td>87.490</td>
+        <td>2636</td>
+        <td>30.12</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    54 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  52745 MiB    97887 MiB    81°C        471.37 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>28000</td>
+        <td>4.291</td>
+        <td>76.834</td>
+        <td>2326</td>
+        <td>30.27</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    56 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  54753 MiB    97887 MiB    80°C        487.93 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>32000</td>
+        <td>4.305</td>
+        <td>81.166</td>
+        <td>2453</td>
+        <td>30.22</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    57 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  56761 MiB    97887 MiB    85°C        507.92 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>36000</td>
+        <td>4.292</td>
+        <td>84.639</td>
+        <td>2555</td>
+        <td>30.18</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    59 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  58769 MiB    97887 MiB    82°C        485.70 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>40000</td>
+        <td>3.778</td>
+        <td>72.884</td>
+        <td>2207</td>
+        <td>30.28</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    61 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  60779 MiB    97887 MiB    80°C        468.94 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>44000</td>
+        <td>5.305</td>
+        <td>75.163</td>
+        <td>2277</td>
+        <td>30.29</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    63 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  62783 MiB    97887 MiB    81°C        475.70 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>48000</td>
+        <td>4.782</td>
+        <td>94.803</td>
+        <td>2855</td>
+        <td>30.11</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    65 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  64791 MiB    97887 MiB    82°C        488.19 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>52000</td>
+        <td>5.045</td>
+        <td>85.883</td>
+        <td>2593</td>
+        <td>30.19</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    67 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  66801 MiB    97887 MiB    81°C        468.00 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>56000</td>
+        <td>4.787</td>
+        <td>89.052</td>
+        <td>2687</td>
+        <td>30.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    69 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  68809 MiB    97887 MiB    82°C        494.38 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>60000</td>
+        <td>4.794</td>
+        <td>85.118</td>
+        <td>2568</td>
+        <td>30.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    70 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  70815 MiB    97887 MiB    80°C        469.75 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>64000</td>
+        <td>5.048</td>
+        <td>80.599</td>
+        <td>2437</td>
+        <td>30.23</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    72 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  72823 MiB    97887 MiB    81°C        476.06 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>68000</td>
+        <td>5.044</td>
+        <td>78.002</td>
+        <td>2360</td>
+        <td>30.25</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    74 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  74831 MiB    97887 MiB    82°C        508.45 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>72000</td>
+        <td>4.797</td>
+        <td>85.067</td>
+        <td>2565</td>
+        <td>30.15</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    76 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  76839 MiB    97887 MiB    81°C        473.08 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>76000</td>
+        <td>5.285</td>
+        <td>85.964</td>
+        <td>2594</td>
+        <td>30.17</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    78 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  78847 MiB    97887 MiB    80°C        470.32 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>80000</td>
+        <td>5.508</td>
+        <td>76.881</td>
+        <td>2324</td>
+        <td>30.22</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    80 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  80857 MiB    97887 MiB    85°C        508.65 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>84000</td>
+        <td>4.991</td>
+        <td>85.930</td>
+        <td>2595</td>
+        <td>30.19</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    82 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  82863 MiB    97887 MiB    81°C        466.18 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>88000</td>
+        <td>5.294</td>
+        <td>106.859</td>
+        <td>3208</td>
+        <td>30.02</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    83 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  84869 MiB    97887 MiB    83°C        483.82 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>92000</td>
+        <td>3.790</td>
+        <td>78.769</td>
+        <td>2382</td>
+        <td>30.24</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    85 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  86877 MiB    97887 MiB    85°C        499.67 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>96000</td>
+        <td>3.805</td>
+        <td>89.973</td>
+        <td>2712</td>
+        <td>30.14</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    87 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  88885 MiB    97887 MiB    82°C        475.57 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>100000</td>
+        <td>4.026</td>
+        <td>88.554</td>
+        <td>2667</td>
+        <td>30.11</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    89 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  90893 MiB    97887 MiB    83°C        490.55 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>104000</td>
+        <td>3.797</td>
+        <td>79.860</td>
+        <td>2412</td>
+        <td>30.20</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    91 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  92901 MiB    97887 MiB    85°C        496.12 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>108000</td>
+        <td>3.791</td>
+        <td>100.602</td>
+        <td>3019</td>
+        <td>30.00</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    93 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  94909 MiB    97887 MiB    85°C        496.30 W     600.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>112000</td>
+        <td>3.789</td>
+        <td>79.686</td>
+        <td>2408</td>
+        <td>30.21</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    95 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 6000 Blackwell Server Edition  96919 MiB    97887 MiB    81°C        461.00 W     600.00 W   </pre></td>
+    </tr>
+</table></body></html>
