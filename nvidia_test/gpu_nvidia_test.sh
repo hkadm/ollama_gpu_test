@@ -13,12 +13,16 @@ MODEL_VRAM=(
     ["gpt-oss:120b"]="70"
     ["qwen3:14b"]="15"
     ["qwen3:32b"]="23"
+    ["qwen3-next:80b"]="59"
+    ["ministral-3:8b"]="7"
+    ["ministral-3:14b"]="15"
 )
 
 declare -A MODEL_GROUPS
 MODEL_GROUPS["deepseekr1"]="deepseek-r1:14b deepseek-r1:32b deepseek-r1:70b"
 MODEL_GROUPS["gpt-oss"]="gpt-oss:20b gpt-oss:120b"
-MODEL_GROUPS["qwen3"]="qwen3:14b qwen3:32b"
+MODEL_GROUPS["qwen3"]="qwen3:14b qwen3:32b qwen3-next:80b"
+MODEL_GROUPS["ministral3"]="ministral-3:8b ministral-3:14b"
 
 # Validation: ensure all models in groups are defined in MODEL_VRAM
 for group in "${!MODEL_GROUPS[@]}"; do
@@ -88,7 +92,7 @@ Options:
   -p PROMPT   Prompt for generation (default: "Generate Tetris game on HTML and JS")
   -m MODEL    Run ONLY the specified model (ignores -t and -g)
   -c CTX      Use a fixed context size
-  -g GROUP    Model group: deepseekr1 (default), gpt-oss, qwen3
+  -g GROUP    Model group: deepseekr1 (default), gpt-oss, qwen3, ministral3
   -h          Show this help and exit
 EOF
       exit 0

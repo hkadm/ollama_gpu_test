@@ -47,7 +47,7 @@ The script automatically:
 | `-p "prompt"` | Prompt for generation. Default: `"Generate Tetris game on HTML and JS"`. |
 | `-m MODEL` | **Overrides `-t` and `-g`**. Runs **only the specified model** (downloads and tests it). |
 | `-c NUMBER` | Use a fixed context size (e.g., `8192`). Without `-c`, iterates from 4000 to 128000 with steps of 4000. |
-| `-g GROUP` | Select a group of models: `deepseekr1` (default), `gpt-oss`, `qwen3`. |
+| `-g GROUP` | Select a group of models: `deepseekr1` (default), `gpt-oss`, `qwen3`, `ministral3`. |
 | `-h` | Show help. |
 
 ## Available Groups and Models
@@ -56,7 +56,9 @@ The script automatically:
 |--------------|--------|-----------|
 | `deepseekr1` (default) | `deepseek-r1:14b`, `deepseek-r1:32b`, `deepseek-r1:70b` | 15 / 23 / 48 GiB |
 | `gpt-oss` | `gpt-oss:20b`, `gpt-oss:120b` | 18 / 70 GiB |
-| `qwen3` | `qwen3:14b`, `qwen3:32b` | 15 / 24 GiB |
+| `qwen3` | `qwen3:14b`, `qwen3:32b`, `qwen3-next:80b`| 15 / 24 / 59 GiB |
+| `ministral3` | `ministral-3:8b`, `ministral-3:14b` | 7 / 15 Gib |
+
 
 !!! warning "Attention"
     The script automatically skips models for which there is insufficient video memory.

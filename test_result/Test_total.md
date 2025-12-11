@@ -20,4 +20,4 @@ Prompt: Generate Tetris game on HTML and JS.
 | NVIDIA RTX A5000 (gen3)          | deepseek-r1:14b   | 53.15                | 48 000  | 9.15               | 49.11                  |      |
 | NVIDIA RTX A5000 (gen3)          | deepseek-r1:32b   | 25.77                | 12 000  | 11.49              | 94.10                  |      |
 | NVIDIA RTX A4000 (gen4)          | deepseek-r1:14b   | 35.81                | 24 000  | 11.72              | 74.37                  |      |
-
+| NVIDIA RTX 2000 PRO Blackwell    | deepseek-r1:14b   | 27.79                | 24 000  | 3.68               | 91.91                  |      |
