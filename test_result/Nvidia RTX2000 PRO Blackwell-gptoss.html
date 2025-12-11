@@ -1,0 +1,376 @@
+<html><head><title>Ollama Test Report — Group: gpt-oss</title></head><body>
+<h1>Ollama Model Test Report — Group: gpt-oss</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>4000</td>
+        <td>3.890</td>
+        <td>39.379</td>
+        <td>2449</td>
+        <td>62.19</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  12518 MiB    16311 MiB    45°C        65.07 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>8000</td>
+        <td>5.452</td>
+        <td>44.374</td>
+        <td>2780</td>
+        <td>62.64</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  12674 MiB    16311 MiB    52°C        65.65 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>12000</td>
+        <td>3.918</td>
+        <td>37.085</td>
+        <td>2325</td>
+        <td>62.69</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  12770 MiB    16311 MiB    56°C        63.07 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>16000</td>
+        <td>3.933</td>
+        <td>43.660</td>
+        <td>2726</td>
+        <td>62.43</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  12878 MiB    16311 MiB    58°C        65.24 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>20000</td>
+        <td>3.972</td>
+        <td>41.803</td>
+        <td>2610</td>
+        <td>62.43</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  12986 MiB    16311 MiB    60°C        64.87 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>24000</td>
+        <td>3.980</td>
+        <td>39.329</td>
+        <td>2456</td>
+        <td>62.44</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13080 MiB    16311 MiB    60°C        63.20 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>28000</td>
+        <td>4.074</td>
+        <td>45.850</td>
+        <td>2856</td>
+        <td>62.28</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13184 MiB    16311 MiB    61°C        64.57 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>32000</td>
+        <td>4.151</td>
+        <td>49.362</td>
+        <td>3070</td>
+        <td>62.19</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13288 MiB    16311 MiB    61°C        64.96 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>36000</td>
+        <td>4.110</td>
+        <td>44.309</td>
+        <td>2761</td>
+        <td>62.31</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13392 MiB    16311 MiB    61°C        66.51 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>40000</td>
+        <td>4.162</td>
+        <td>46.552</td>
+        <td>2899</td>
+        <td>62.27</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13496 MiB    16311 MiB    61°C        66.34 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>44000</td>
+        <td>4.111</td>
+        <td>45.014</td>
+        <td>2805</td>
+        <td>62.31</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13600 MiB    16311 MiB    60°C        63.05 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>48000</td>
+        <td>4.235</td>
+        <td>60.403</td>
+        <td>3744</td>
+        <td>61.98</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13702 MiB    16311 MiB    61°C        62.53 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>52000</td>
+        <td>4.150</td>
+        <td>39.022</td>
+        <td>2436</td>
+        <td>62.42</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13808 MiB    16311 MiB    61°C        63.54 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>56000</td>
+        <td>4.237</td>
+        <td>53.056</td>
+        <td>3297</td>
+        <td>62.14</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  13910 MiB    16311 MiB    61°C        66.58 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>60000</td>
+        <td>4.262</td>
+        <td>50.738</td>
+        <td>3155</td>
+        <td>62.18</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14016 MiB    16311 MiB    61°C        61.32 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>64000</td>
+        <td>4.327</td>
+        <td>44.339</td>
+        <td>2764</td>
+        <td>62.33</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14124 MiB    16311 MiB    60°C        63.95 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>68000</td>
+        <td>4.294</td>
+        <td>41.264</td>
+        <td>2574</td>
+        <td>62.37</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14232 MiB    16311 MiB    60°C        63.07 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>72000</td>
+        <td>4.306</td>
+        <td>44.006</td>
+        <td>2743</td>
+        <td>62.33</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14340 MiB    16311 MiB    61°C        65.10 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>76000</td>
+        <td>4.252</td>
+        <td>42.435</td>
+        <td>2646</td>
+        <td>62.35</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14446 MiB    16311 MiB    61°C        66.17 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>80000</td>
+        <td>4.233</td>
+        <td>50.239</td>
+        <td>3125</td>
+        <td>62.20</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14554 MiB    16311 MiB    61°C        65.33 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>84000</td>
+        <td>4.377</td>
+        <td>50.911</td>
+        <td>3166</td>
+        <td>62.18</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14662 MiB    16311 MiB    61°C        65.22 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>88000</td>
+        <td>4.352</td>
+        <td>53.350</td>
+        <td>3316</td>
+        <td>62.15</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14722 MiB    16311 MiB    62°C        63.16 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>92000</td>
+        <td>4.296</td>
+        <td>36.075</td>
+        <td>2255</td>
+        <td>62.50</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14830 MiB    16311 MiB    60°C        64.48 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>96000</td>
+        <td>4.411</td>
+        <td>53.686</td>
+        <td>3336</td>
+        <td>62.13</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  14938 MiB    16311 MiB    62°C        65.67 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>100000</td>
+        <td>4.478</td>
+        <td>40.470</td>
+        <td>2526</td>
+        <td>62.41</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15046 MiB    16311 MiB    61°C        65.57 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>104000</td>
+        <td>4.491</td>
+        <td>41.010</td>
+        <td>2558</td>
+        <td>62.37</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15154 MiB    16311 MiB    62°C        65.36 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>108000</td>
+        <td>4.434</td>
+        <td>39.721</td>
+        <td>2480</td>
+        <td>62.43</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15260 MiB    16311 MiB    62°C        62.34 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>112000</td>
+        <td>4.493</td>
+        <td>35.248</td>
+        <td>2204</td>
+        <td>62.52</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15368 MiB    16311 MiB    61°C        62.54 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>116000</td>
+        <td>4.479</td>
+        <td>43.611</td>
+        <td>2718</td>
+        <td>62.32</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15476 MiB    16311 MiB    61°C        63.18 W      70.00 W    </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>120000</td>
+        <td>4.533</td>
+        <td>35.476</td>
+        <td>2218</td>
+        <td>62.52</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX PRO 2000 Blackwell  15584 MiB    16311 MiB    61°C        63.75 W      70.00 W    </pre></td>
+    </tr>
+</table></body></html>
