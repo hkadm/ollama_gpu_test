@@ -15,7 +15,7 @@ MODEL_VRAM=(
     ["qwen3:32b"]="23"
     ["qwen3-next:80b"]="59"
     ["ministral-3:8b"]="7"
-    ["ministral-3:14b"]="15"
+    ["ministral-3:14b"]="11"
 )
 
 declare -A MODEL_GROUPS
