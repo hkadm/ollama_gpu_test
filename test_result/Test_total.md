@@ -20,6 +20,10 @@ Prompt: Generate Tetris game on HTML and JS.
 | NVIDIA RTX A5000 (gen3)          | deepseek-r1:14b   | 53.15                | 48 000  | 9.15               | 49.11                  |      |
 | NVIDIA RTX A5000 (gen3)          | deepseek-r1:32b   | 25.77                | 12 000  | 11.49              | 94.10                  |      |
 | NVIDIA RTX A4000 (gen4)          | deepseek-r1:14b   | 35.81                | 24 000  | 11.72              | 74.37                  |      |
+| NVIDIA RTX A4000 (gen4)          | ministral-3:8b    | 65.42                | 64 000  | 12.92              | 44.98                  | Visual |
+| NVIDIA RTX A4000 (gen4)          | ministral-3:14b   | 42.28                | 36 000  | 13.99              | 86.12                  | Visual |
+| NVIDIA RTX A4000 (gen4)          | gpt-oss:20b       | 84.06                | 120 000 | 14.89              | 30.85                  | Mixture of Experts |
 | NVIDIA RTX 2000 PRO Blackwell    | deepseek-r1:14b   | 27.79                | 24 000  | 3.68               | 91.91                  |      |
-| NVIDIA RTX 2000 PRO Blackwell    | ministral-3:14b   | 30.91                | 36 000  | 3.68               | 115.42                 | Visual |
+| NVIDIA RTX PRO 2000 Blackwell    | ministral-3:8b    | 48.21                | 68 000  | 3.17               | 63.97                  | Visual |
+| NVIDIA RTX 2000 PRO Blackwell    | ministral-3:14b   | 30.97                | 36 000  | 3.68               | 115.42                 | Visual |
 | NVIDIA RTX 2000 PRO Blackwell    | gpt-oss:20b       | 47.15                | 120 000 | 4.23               | 62.26                  | Mixture of Experts |

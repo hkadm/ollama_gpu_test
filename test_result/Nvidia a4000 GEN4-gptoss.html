@@ -1,0 +1,406 @@
+<html><head><title>Ollama Test Report — Group: gpt-oss</title></head><body>
+<h1>Ollama Model Test Report — Group: gpt-oss</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>4000</td>
+        <td>14.596</td>
+        <td>39.038</td>
+        <td>3259</td>
+        <td>83.48</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     12608 MiB    16376 MiB    80°C        124.67 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>8000</td>
+        <td>14.617</td>
+        <td>30.037</td>
+        <td>2530</td>
+        <td>84.22</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     12766 MiB    16376 MiB    82°C        123.39 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>12000</td>
+        <td>14.551</td>
+        <td>28.876</td>
+        <td>2437</td>
+        <td>84.39</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     12864 MiB    16376 MiB    82°C        125.96 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>16000</td>
+        <td>14.634</td>
+        <td>30.711</td>
+        <td>2588</td>
+        <td>84.26</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     12972 MiB    16376 MiB    83°C        124.57 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>20000</td>
+        <td>14.691</td>
+        <td>29.871</td>
+        <td>2511</td>
+        <td>84.06</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13080 MiB    16376 MiB    83°C        128.63 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>24000</td>
+        <td>14.668</td>
+        <td>27.603</td>
+        <td>2327</td>
+        <td>84.30</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13176 MiB    16376 MiB    83°C        124.73 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>28000</td>
+        <td>14.699</td>
+        <td>40.960</td>
+        <td>3438</td>
+        <td>83.93</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13280 MiB    16376 MiB    85°C        126.48 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>32000</td>
+        <td>14.825</td>
+        <td>28.767</td>
+        <td>2421</td>
+        <td>84.15</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13384 MiB    16376 MiB    84°C        128.96 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>36000</td>
+        <td>14.793</td>
+        <td>38.668</td>
+        <td>3243</td>
+        <td>83.86</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13488 MiB    16376 MiB    84°C        127.32 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>40000</td>
+        <td>14.802</td>
+        <td>29.482</td>
+        <td>2480</td>
+        <td>84.11</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13592 MiB    16376 MiB    84°C        130.73 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>44000</td>
+        <td>14.868</td>
+        <td>23.028</td>
+        <td>1941</td>
+        <td>84.28</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13696 MiB    16376 MiB    83°C        131.68 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>48000</td>
+        <td>14.792</td>
+        <td>27.277</td>
+        <td>2298</td>
+        <td>84.24</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13800 MiB    16376 MiB    83°C        128.43 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>52000</td>
+        <td>14.856</td>
+        <td>26.426</td>
+        <td>2226</td>
+        <td>84.23</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     13904 MiB    16376 MiB    83°C        124.33 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>56000</td>
+        <td>14.905</td>
+        <td>33.630</td>
+        <td>2821</td>
+        <td>83.88</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx56000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14006 MiB    16376 MiB    84°C        127.12 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>60000</td>
+        <td>14.794</td>
+        <td>29.067</td>
+        <td>2442</td>
+        <td>84.01</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx60000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14112 MiB    16376 MiB    84°C        129.43 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>64000</td>
+        <td>14.891</td>
+        <td>32.765</td>
+        <td>2749</td>
+        <td>83.90</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx64000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14220 MiB    16376 MiB    84°C        126.47 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>68000</td>
+        <td>14.875</td>
+        <td>27.310</td>
+        <td>2295</td>
+        <td>84.03</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx68000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14328 MiB    16376 MiB    84°C        129.35 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>72000</td>
+        <td>14.987</td>
+        <td>26.262</td>
+        <td>2209</td>
+        <td>84.11</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx72000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14436 MiB    16376 MiB    84°C        131.36 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>76000</td>
+        <td>14.986</td>
+        <td>45.138</td>
+        <td>3768</td>
+        <td>83.47</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx76000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14542 MiB    16376 MiB    85°C        127.22 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>80000</td>
+        <td>15.003</td>
+        <td>30.523</td>
+        <td>2561</td>
+        <td>83.90</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx80000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14650 MiB    16376 MiB    85°C        124.92 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>84000</td>
+        <td>15.036</td>
+        <td>29.422</td>
+        <td>2471</td>
+        <td>83.98</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx84000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14758 MiB    16376 MiB    85°C        131.56 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>88000</td>
+        <td>15.000</td>
+        <td>32.637</td>
+        <td>2738</td>
+        <td>83.89</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx88000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14818 MiB    16376 MiB    85°C        125.81 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>92000</td>
+        <td>15.034</td>
+        <td>32.533</td>
+        <td>2728</td>
+        <td>83.85</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx92000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     14926 MiB    16376 MiB    85°C        127.84 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>96000</td>
+        <td>15.085</td>
+        <td>27.687</td>
+        <td>2333</td>
+        <td>84.26</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx96000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15034 MiB    16376 MiB    84°C        126.48 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>100000</td>
+        <td>15.051</td>
+        <td>26.055</td>
+        <td>2197</td>
+        <td>84.32</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx100000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15142 MiB    16376 MiB    84°C        129.85 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>104000</td>
+        <td>15.088</td>
+        <td>32.469</td>
+        <td>2733</td>
+        <td>84.17</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx104000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15250 MiB    16376 MiB    85°C        126.14 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>108000</td>
+        <td>15.271</td>
+        <td>32.629</td>
+        <td>2747</td>
+        <td>84.18</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx108000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15356 MiB    16376 MiB    85°C        127.85 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>112000</td>
+        <td>15.126</td>
+        <td>25.780</td>
+        <td>2174</td>
+        <td>84.32</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx112000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15464 MiB    16376 MiB    84°C        125.87 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>116000</td>
+        <td>15.189</td>
+        <td>29.589</td>
+        <td>2488</td>
+        <td>84.08</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx116000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15572 MiB    16376 MiB    84°C        128.26 W     140.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>120000</td>
+        <td>15.133</td>
+        <td>31.199</td>
+        <td>2618</td>
+        <td>83.91</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx120000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     NVIDIA RTX A4000     15680 MiB    16376 MiB    85°C        127.08 W     140.00 W   </pre></td>
+    </tr>
+</table></body></html>
