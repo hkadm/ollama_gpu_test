@@ -16,7 +16,7 @@ The script automatically:
 ## Server Requirements
 
 - A server with an Nvidia GPU (file `gpu_nvidia_test.sh`). Supported video cards have a memory size ranging from 16 to 96 GB. This includes models such as A4000, A5000, A6000, the RTX series, A100, H100, RTX 6000/5000 Blackwell, and others. For testing video cards with larger memory capacities, it is necessary to modify the script by adding models with a larger size or using a different degree of quantization.
-- Internet access.
+- A server with an AMD GPU (file `gpu_amd_test.sh`). Supported video cards have a memory size ranging from 16 to 32 GB. We test on AMD RADEON AI PRO R9700
 - Root or sudo permissions.
 - At least **16 GB of video memory** to run the smallest model.
 
@@ -30,10 +30,23 @@ The script automatically:
    nano gpu_nvidia_test.sh
    ```
 
+  or
+
+   ```bash
+   nano amd_nvidia_test.sh
+   ```
+
 3. **Run it as root or with sudo via bash**:  
    ```bash
    sudo bash ./gpu_nvidia_test.sh
    ```
+
+   or
+
+   ```bash
+   sudo bash ./amd_nvidia_test.sh
+   ```
+
 
 ## Launch Parameters
 
