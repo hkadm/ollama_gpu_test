@@ -1,0 +1,399 @@
+<html><head><title>Ollama Test Report — Group: gpt-oss</title></head><body>
+<h1>Ollama Model Test Report — Group: gpt-oss</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>4000</td>
+        <td>0.344</td>
+        <td>19.768</td>
+        <td>2386</td>
+        <td>120.70</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8192       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     12813 MiB    24564 MiB    52°C        196.75 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>8000</td>
+        <td>0.366</td>
+        <td>24.549</td>
+        <td>2951</td>
+        <td>120.20</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8192       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     12813 MiB    24564 MiB    60°C        198.12 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>12000</td>
+        <td>6.011</td>
+        <td>21.601</td>
+        <td>2582</td>
+        <td>119.52</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     12913 MiB    24564 MiB    63°C        192.66 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>16000</td>
+        <td>6.100</td>
+        <td>22.115</td>
+        <td>2643</td>
+        <td>119.51</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13021 MiB    24564 MiB    65°C        192.52 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>20000</td>
+        <td>6.046</td>
+        <td>23.708</td>
+        <td>2833</td>
+        <td>119.49</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13129 MiB    24564 MiB    66°C        189.66 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>24000</td>
+        <td>6.200</td>
+        <td>24.098</td>
+        <td>2870</td>
+        <td>119.09</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13225 MiB    24564 MiB    66°C        191.37 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>28000</td>
+        <td>6.152</td>
+        <td>21.149</td>
+        <td>2531</td>
+        <td>119.67</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13329 MiB    24564 MiB    66°C        183.88 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>32000</td>
+        <td>6.292</td>
+        <td>18.247</td>
+        <td>2181</td>
+        <td>119.52</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13433 MiB    24564 MiB    65°C        194.29 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>36000</td>
+        <td>6.236</td>
+        <td>20.523</td>
+        <td>2452</td>
+        <td>119.47</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13537 MiB    24564 MiB    65°C        186.21 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>40000</td>
+        <td>6.354</td>
+        <td>18.907</td>
+        <td>2264</td>
+        <td>119.74</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13641 MiB    24564 MiB    65°C        197.87 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>44000</td>
+        <td>6.302</td>
+        <td>27.282</td>
+        <td>3243</td>
+        <td>118.87</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13745 MiB    24564 MiB    66°C        188.49 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>48000</td>
+        <td>6.237</td>
+        <td>22.040</td>
+        <td>2634</td>
+        <td>119.51</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13849 MiB    24564 MiB    65°C        190.31 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>52000</td>
+        <td>6.303</td>
+        <td>24.233</td>
+        <td>2882</td>
+        <td>118.92</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     13953 MiB    24564 MiB    65°C        188.83 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>56000</td>
+        <td>6.264</td>
+        <td>23.901</td>
+        <td>2846</td>
+        <td>119.07</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14055 MiB    24564 MiB    66°C        191.73 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>60000</td>
+        <td>6.428</td>
+        <td>19.998</td>
+        <td>2386</td>
+        <td>119.31</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14161 MiB    24564 MiB    65°C        196.84 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>64000</td>
+        <td>6.835</td>
+        <td>22.743</td>
+        <td>2717</td>
+        <td>119.46</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14269 MiB    24564 MiB    65°C        184.67 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>68000</td>
+        <td>6.443</td>
+        <td>33.132</td>
+        <td>3941</td>
+        <td>118.94</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14377 MiB    24564 MiB    66°C        190.46 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>72000</td>
+        <td>6.229</td>
+        <td>20.256</td>
+        <td>2424</td>
+        <td>119.66</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14485 MiB    24564 MiB    65°C        195.41 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>76000</td>
+        <td>6.588</td>
+        <td>26.703</td>
+        <td>3187</td>
+        <td>119.34</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14591 MiB    24564 MiB    65°C        194.89 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>80000</td>
+        <td>6.617</td>
+        <td>21.605</td>
+        <td>2591</td>
+        <td>119.92</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14699 MiB    24564 MiB    65°C        198.03 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>84000</td>
+        <td>6.564</td>
+        <td>18.213</td>
+        <td>2174</td>
+        <td>119.36</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14807 MiB    24564 MiB    64°C        182.70 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>88000</td>
+        <td>6.843</td>
+        <td>24.461</td>
+        <td>2917</td>
+        <td>119.24</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14867 MiB    24564 MiB    65°C        197.48 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>92000</td>
+        <td>6.840</td>
+        <td>23.460</td>
+        <td>2785</td>
+        <td>118.71</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     14975 MiB    24564 MiB    65°C        185.91 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>96000</td>
+        <td>6.872</td>
+        <td>24.578</td>
+        <td>2920</td>
+        <td>118.80</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15083 MiB    24564 MiB    65°C        188.50 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>100000</td>
+        <td>6.684</td>
+        <td>24.129</td>
+        <td>2883</td>
+        <td>119.48</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15191 MiB    24564 MiB    66°C        195.93 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>104000</td>
+        <td>6.497</td>
+        <td>21.895</td>
+        <td>2611</td>
+        <td>119.25</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15299 MiB    24564 MiB    65°C        190.96 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>108000</td>
+        <td>6.903</td>
+        <td>26.670</td>
+        <td>3178</td>
+        <td>119.16</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15405 MiB    24564 MiB    66°C        190.68 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>112000</td>
+        <td>6.881</td>
+        <td>21.538</td>
+        <td>2572</td>
+        <td>119.41</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15513 MiB    24564 MiB    64°C        196.14 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>116000</td>
+        <td>7.007</td>
+        <td>18.152</td>
+        <td>2171</td>
+        <td>119.60</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15621 MiB    24564 MiB    63°C        188.46 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>120000</td>
+        <td>6.795</td>
+        <td>21.231</td>
+        <td>2549</td>
+        <td>120.06</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15729 MiB    24564 MiB    63°C        190.35 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>124000</td>
+        <td>6.872</td>
+        <td>26.710</td>
+        <td>3198</td>
+        <td>119.73</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     124000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15837 MiB    24564 MiB    62°C        193.87 W     230.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>128000</td>
+        <td>6.784</td>
+        <td>19.499</td>
+        <td>2339</td>
+        <td>119.95</td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     128000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim   
+0     NVIDIA RTX A5000     15945 MiB    24564 MiB    61°C        190.91 W     230.00 W   </pre></td>
+    </tr>
+</table></body></html>

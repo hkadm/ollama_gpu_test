@@ -19,6 +19,7 @@ Prompt: Generate Tetris game on HTML and JS.
 | NVIDIA GeForce RTX 4090 (gen3) | 24 GiB | deepseek-r1:32b | 40.94 | 12 000  | 9.19 | 58.62 | |
 | NVIDIA RTX A5000 (gen3) | 24 GiB | deepseek-r1:14b | 53.15 | 48 000  | 9.15 | 49.11 | |
 | NVIDIA RTX A5000 (gen3) | 24 GiB | deepseek-r1:32b | 25.77 | 12 000  | 11.49 | 94.10 | |
+| NVIDIA RTX A5000 (gen3) | 24 GiB | gpt-oss:20b | 119.46 | 128 000 | 6.12  | 22.72 | Mixture of Experts |
 | NVIDIA RTX A4000 (gen4) | 16 GiB | deepseek-r1:14b | 35.81 | 24 000  | 11.72 | 74.37 | |
 | NVIDIA RTX A4000 (gen4) | 16 GiB | ministral-3:8b | 65.42 | 64 000  | 12.92 | 44.98 | Visual |
 | NVIDIA RTX A4000 (gen4) | 16 GiB | ministral-3:14b | 42.28 | 36 000  | 13.99 | 86.12 | Visual |
@@ -29,3 +30,4 @@ Prompt: Generate Tetris game on HTML and JS.
 | NVIDIA RTX PRO 2000 Blackwell | 16 GiB | gpt-oss:20b | 62.54 | 120 000 | 4.23 | 43.26 | Mixture of Experts |
 | AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:14b | 53.52 | 80 000 | 6.74 | 50.50 | |
 | AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:32b | 26.29 | 36 000 | 8.11 | 92.89 | |
+| AMD RADEON AI PRO R9700 | 32 GiB | gpt-oss:20b | 102.40 | 128 000 | 5.71 | 28.22 | Mixture of Experts |
