@@ -226,7 +226,7 @@ else
   echo "Skipping user groups (DO_USER_GROUPS=0)."
 fi
 
-# PATH in ~/.bashrc (PATH only, no LD_LIBRARY_PATH)
+# PATH + LD_LIBRARY_PATH in ~/.bashrc
 if [[ "${DO_BASHRC_PATH}" -eq 1 ]]; then
   TARGET_USER="${SUDO_USER:-$USER}"
   TARGET_HOME="$(getent passwd "${TARGET_USER}" | cut -d: -f6)"
@@ -237,8 +237,43 @@ if [[ "${DO_BASHRC_PATH}" -eq 1 ]]; then
     sudo -u "${TARGET_USER}" touch "${TARGET_BASHRC}" || true
   fi
 
+  # Determining the installed ROCm version
+  ROCM_VERSION_DIR="$(ls -d /opt/rocm-[0-9]* 2>/dev/null | sort -V | tail -n 1 || true)"
+  if [[ -n "${ROCM_VERSION_DIR}" ]]; then
+    ROCM_VERSION="$(basename "${ROCM_VERSION_DIR}" | sed 's/rocm-//')"
+    echo "Using ROCm version: ${ROCM_VERSION} (${ROCM_VERSION_DIR})"
+  else
+    ROCM_VERSION="unknown"
+    echo "Warning: No /opt/rocm-X.Y.Z found; using generic paths"
+  fi
+
   if ! grep -q "${MARKER}" "${TARGET_BASHRC}" 2>/dev/null; then
-    cat >> "${TARGET_BASHRC}" <<'EOF'
+    cat >> "${TARGET_BASHRC}" <<EOF
+
+# ${MARKER}
+if [ -d "/opt/rocm-${ROCM_VERSION}" ]; then
+  export PATH="/opt/rocm-${ROCM_VERSION}/bin:\$PATH"
+  export LD_LIBRARY_PATH="/opt/rocm-${ROCM_VERSION}/hip/lib:/opt/rocm-${ROCM_VERSION}/lib:\$LD_LIBRARY_PATH"
+  export ROCM_PATH="/opt/rocm-${ROCM_VERSION}"
+  export HIP_CLANG_PATH="/opt/rocm-${ROCM_VERSION}/llvm/bin"
+fi
+EOF
+    echo "Added full ROCm paths (PATH+LD_LIBRARY_PATH) to ${TARGET_BASHRC}"
+  else
+    echo "ROCm PATH block already present in ${TARGET_BASHRC}"
+  fi
+
+  # Apply to the current session
+  if [[ -n "${ROCM_VERSION_DIR}" ]]; then
+    export PATH="${ROCM_VERSION_DIR}/bin:${PATH}"
+    export LD_LIBRARY_PATH="${ROCM_VERSION_DIR}/hip/lib:${ROCM_VERSION_DIR}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+    export ROCM_PATH="${ROCM_VERSION_DIR}"
+    export HIP_CLANG_PATH="${ROCM_VERSION_DIR}/llvm/bin"
+  fi
+else
+  echo "Skipping .bashrc PATH (DO_BASHRC_PATH=0)."
+fi
+
 
 # AMD ROCm Paths
 export PATH="/opt/rocm/bin:$PATH"
