@@ -27,5 +27,5 @@ Prompt: Generate Tetris game on HTML and JS.
 | NVIDIA RTX PRO 2000 Blackwell | 16 GiB | ministral-3:8b | 48.21 | 68 000  | 3.17 | 63.97 | Visual |
 | NVIDIA RTX PRO 2000 Blackwell | 16 GiB | ministral-3:14b | 30.97 | 36 000  | 3.68 | 115.42 | Visual |
 | NVIDIA RTX PRO 2000 Blackwell | 16 GiB | gpt-oss:20b | 62.54 | 120 000 | 4.23 | 43.26 | Mixture of Experts |
-| AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:14b | 53.52 | 80 000 | 6.74 | 50.50 | From attached Ollama report (avg over tested ctx). [3] |
-| AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:32b | 26.29 | 36 000 | 8.11 | 92.89 | From attached Ollama report (avg over tested ctx). [3] |
+| AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:14b | 53.52 | 80 000 | 6.74 | 50.50 | |
+| AMD RADEON AI PRO R9700 | 32 GiB | deepseek-r1:32b | 26.29 | 36 000 | 8.11 | 92.89 | |
