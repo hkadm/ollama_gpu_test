@@ -3,27 +3,29 @@
 The value of speed in (tokens per second) does not depend on the size of `ctx`.
 Prompt: Generate Tetris game on HTML and JS.
 
-| GPU                              | Model             | Tokens/sec (average) | max ctx | Load (sec) average | Generate (sec) average |Note |
+| GPU | Model | Tokens/sec (average) | max ctx | Load (sec) average | Generate (sec) average | Note |
 |----------------------------------|-------------------|----------------------|---------|--------------------|------------------------|-----|
-| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:14b   | 114.02           | 128 000 | 1.74               | 22.71                  |     |
-| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:32b   | 58.73            | 128 000 | 2.44               | 42.91                  |     |
-| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:70b   | 30.19            | 112 000 | 4.5                | 84,23                  |     |
-| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:14b   | 127.09               | 72 000  | 3.99               | 19.78                  | model does not scale to the second GPU |
-| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:32b   | 65.10                | 32 000  | 5.29               | 37.30                  | model does not scale to the second GPU |
-| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:70b   | 33.35                | 28 000  | 8.39               | 75.41                  |      |
-| NVIDIA GeForce RTX 5090 (gen5)   | deepseek-r1:14b   | 126.68               | 76 000  | 2.01               | 20.97                  |      |
-| NVIDIA GeForce RTX 5090 (gen5)   | deepseek-r1:32b   | 65.38                | 32 000  | 3.02               | 39.35                  |      |
-| 2xNVIDIA GeForce RTX 4090 (gen4) | deepseek-r1:14b   | 82.09                | 48 000  | 3.99               | 31.54                  | model does not scale to the second GPU |
-| 2xNVIDIA GeForce RTX 4090 (gen4) | deepseek-r1:32b   | 40.52                | 56 000  | 4.89               | 59.80                  |      |
-| NVIDIA GeForce RTX 4090 (gen3)   | deepseek-r1:14b   | 83.13                | 48 000  | 7.30               | 33.66                  |      |
-| NVIDIA GeForce RTX 4090 (gen3)   | deepseek-r1:32b   | 40.94                | 12 000  | 9.19               | 58.62                  |      |
-| NVIDIA RTX A5000 (gen3)          | deepseek-r1:14b   | 53.15                | 48 000  | 9.15               | 49.11                  |      |
-| NVIDIA RTX A5000 (gen3)          | deepseek-r1:32b   | 25.77                | 12 000  | 11.49              | 94.10                  |      |
-| NVIDIA RTX A4000 (gen4)          | deepseek-r1:14b   | 35.81                | 24 000  | 11.72              | 74.37                  |      |
-| NVIDIA RTX A4000 (gen4)          | ministral-3:8b    | 65.42                | 64 000  | 12.92              | 44.98                  | Visual |
-| NVIDIA RTX A4000 (gen4)          | ministral-3:14b   | 42.28                | 36 000  | 13.99              | 86.12                  | Visual |
-| NVIDIA RTX A4000 (gen4)          | gpt-oss:20b       | 84.06                | 120 000 | 14.89              | 30.85                  | Mixture of Experts |
-| NVIDIA RTX PRO 2000 Blackwell    | deepseek-r1:14b   | 27.79                | 24 000  | 3.68               | 91.91                  |      |
-| NVIDIA RTX PRO 2000 Blackwell    | ministral-3:8b    | 48.21                | 68 000  | 3.17               | 63.97                  | Visual |
-| NVIDIA RTX PRO 2000 Blackwell    | ministral-3:14b   | 30.97                | 36 000  | 3.68               | 115.42                 | Visual |
-| NVIDIA RTX PRO 2000 Blackwell    | gpt-oss:20b       | 62.54                | 120 000 | 4.23               | 43.26                  | Mixture of Experts |
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:14b | 114.02 | 128 000 | 1.74 | 22.71 | |
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:32b | 58.73 | 128 000 | 2.44 | 42.91 | |
+| NVIDIA RTX 6000 PRO Blackwell (gen5) | deepseek-r1:70b | 30.19 | 112 000 | 4.5 | 84,23 | |
+| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:14b | 127.09 | 72 000 | 3.99 | 19.78 | model does not scale to the second GPU |
+| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:32b | 65.10 | 32 000 | 5.29 | 37.30 | model does not scale to the second GPU |
+| 2xNVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:70b | 33.35 | 28 000 | 8.39 | 75.41 | |
+| NVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:14b | 126.68 | 76 000 | 2.01 | 20.97 | |
+| NVIDIA GeForce RTX 5090 (gen5) | deepseek-r1:32b | 65.38 | 32 000 | 3.02 | 39.35 | |
+| 2xNVIDIA GeForce RTX 4090 (gen4) | deepseek-r1:14b | 82.09 | 48 000 | 3.99 | 31.54 | model does not scale to the second GPU |
+| 2xNVIDIA GeForce RTX 4090 (gen4) | deepseek-r1:32b | 40.52 | 56 000 | 4.89 | 59.80 | |
+| NVIDIA GeForce RTX 4090 (gen3) | deepseek-r1:14b | 83.13 | 48 000 | 7.30 | 33.66 | |
+| NVIDIA GeForce RTX 4090 (gen3) | deepseek-r1:32b | 40.94 | 12 000 | 9.19 | 58.62 | |
+| NVIDIA RTX A5000 (gen3) | deepseek-r1:14b | 53.15 | 48 000 | 9.15 | 49.11 | |
+| NVIDIA RTX A5000 (gen3) | deepseek-r1:32b | 25.77 | 12 000 | 11.49 | 94.10 | |
+| NVIDIA RTX A4000 (gen4) | deepseek-r1:14b | 35.81 | 24 000 | 11.72 | 74.37 | |
+| NVIDIA RTX A4000 (gen4) | ministral-3:8b | 65.42 | 64 000 | 12.92 | 44.98 | Visual |
+| NVIDIA RTX A4000 (gen4) | ministral-3:14b | 42.28 | 36 000 | 13.99 | 86.12 | Visual |
+| NVIDIA RTX A4000 (gen4) | gpt-oss:20b | 84.06 | 120 000 | 14.89 | 30.85 | Mixture of Experts |
+| NVIDIA RTX PRO 2000 Blackwell | deepseek-r1:14b | 27.79 | 24 000 | 3.68 | 91.91 | |
+| NVIDIA RTX PRO 2000 Blackwell | ministral-3:8b | 48.21 | 68 000 | 3.17 | 63.97 | Visual |
+| NVIDIA RTX PRO 2000 Blackwell | ministral-3:14b | 30.97 | 36 000 | 3.68 | 115.42 | Visual |
+| NVIDIA RTX PRO 2000 Blackwell | gpt-oss:20b | 62.54 | 120 000 | 4.23 | 43.26 | Mixture of Experts |
+| AMD RADEON AI PRO R9700 | deepseek-r1:14b | 53.52 | 80 000 | 6.74 | 50.50 | |
+| AMD RADEON AI PRO R9700 | deepseek-r1:32b | 26.29 | 36 000 | 8.11 | 92.89 | |

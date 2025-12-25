@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html><head><title>Ollama Test Report — Group: deepseekr1 (AMD GPU)</title>
+<style>
+table {border-collapse: collapse; width: 100%; font-family: monospace;}
+th, td {border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 11px;}
+th {background-color: #f2f2f2;}
+pre {margin: 0; font-size: 10px; white-space: pre-wrap; max-height: 200px; overflow: auto;}
+</style>
+</head><body>
+<h1>Ollama Model Test Report — Group: deepseekr1 (AMD GPU)</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>Ollama PS</th>
+<th>AMD Metrics</th>
+</tr>
+
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>4000</td>
+        <td>6.614</td>
+        <td>54.960</td>
+        <td>2940</td>
+        <td>53.49</td>
+        <td><pre>NAME               ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    9.7 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       65     58%      9.5/31.9GB     83%      246W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>8000</td>
+        <td>6.617</td>
+        <td>47.498</td>
+        <td>2553</td>
+        <td>53.74</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    10 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       73     60%      10.2/31.9GB    91%      258W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>12000</td>
+        <td>6.648</td>
+        <td>48.225</td>
+        <td>2585</td>
+        <td>53.60</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    11 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       77     60%      10.9/31.9GB    92%      258W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>16000</td>
+        <td>6.690</td>
+        <td>44.319</td>
+        <td>2383</td>
+        <td>53.76</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    13 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       78     59%      11.6/31.9GB    91%      255W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>20000</td>
+        <td>6.624</td>
+        <td>49.415</td>
+        <td>2647</td>
+        <td>53.56</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     60%      12.4/31.9GB    92%      259W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>24000</td>
+        <td>6.612</td>
+        <td>52.215</td>
+        <td>2789</td>
+        <td>53.41</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    15 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       78     61%      13.1/31.9GB    92%      261W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>28000</td>
+        <td>6.640</td>
+        <td>72.630</td>
+        <td>3826</td>
+        <td>52.67</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    16 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       78     72%      13.8/31.9GB    100%     299W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>32000</td>
+        <td>6.617</td>
+        <td>47.231</td>
+        <td>2532</td>
+        <td>53.60</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    17 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     60%      14.5/31.9GB    92%      258W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>36000</td>
+        <td>6.845</td>
+        <td>42.745</td>
+        <td>2300</td>
+        <td>53.80</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    18 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     59%      15.3/31.9GB    91%      253W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>40000</td>
+        <td>6.862</td>
+        <td>42.148</td>
+        <td>2269</td>
+        <td>53.83</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    19 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     58%      16.0/31.9GB    90%      253W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>44000</td>
+        <td>6.914</td>
+        <td>45.379</td>
+        <td>2435</td>
+        <td>53.65</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    20 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     59%      16.7/31.9GB    91%      255W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>48000</td>
+        <td>6.635</td>
+        <td>44.652</td>
+        <td>2399</td>
+        <td>53.72</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    22 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     59%      17.6/31.9GB    91%      256W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>52000</td>
+        <td>6.846</td>
+        <td>62.722</td>
+        <td>3330</td>
+        <td>53.09</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    23 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       76     62%      18.3/31.9GB    93%      266W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>56000</td>
+        <td>6.656</td>
+        <td>51.785</td>
+        <td>2770</td>
+        <td>53.49</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    24 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       79     61%      19.0/31.9GB    92%      261W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>60000</td>
+        <td>6.620</td>
+        <td>49.693</td>
+        <td>2659</td>
+        <td>53.50</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    25 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     60%      19.8/31.9GB    92%      260W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>64000</td>
+        <td>6.810</td>
+        <td>55.699</td>
+        <td>2972</td>
+        <td>53.35</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    26 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       79     61%      20.5/31.9GB    93%      263W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>68000</td>
+        <td>6.916</td>
+        <td>49.733</td>
+        <td>2664</td>
+        <td>53.56</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    27 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       79     0%       21.2/31.9GB    100%     100W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>72000</td>
+        <td>6.869</td>
+        <td>57.171</td>
+        <td>3044</td>
+        <td>53.24</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    28 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       76     62%      22.0/31.9GB    93%      263W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>76000</td>
+        <td>6.887</td>
+        <td>45.255</td>
+        <td>2430</td>
+        <td>53.69</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    29 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     59%      22.6/31.9GB    91%      256W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>80000</td>
+        <td>6.881</td>
+        <td>46.449</td>
+        <td>2491</td>
+        <td>53.62</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:14b    c333b7232bdb    31 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     59%      23.3/31.9GB    91%      256W    
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>4000</td>
+        <td>8.104</td>
+        <td>96.153</td>
+        <td>2523</td>
+        <td>26.23</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    20 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     48%      19.8/31.9GB    93%      222W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>8000</td>
+        <td>8.147</td>
+        <td>95.514</td>
+        <td>2509</td>
+        <td>26.26</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    22 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       76     72%      20.8/31.9GB    94%      274W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>12000</td>
+        <td>8.100</td>
+        <td>92.908</td>
+        <td>2444</td>
+        <td>26.30</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    23 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     71%      21.8/31.9GB    94%      273W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>16000</td>
+        <td>8.123</td>
+        <td>103.978</td>
+        <td>2726</td>
+        <td>26.21</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    24 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     72%      22.7/31.9GB    95%      275W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>20000</td>
+        <td>8.089</td>
+        <td>95.071</td>
+        <td>2498</td>
+        <td>26.27</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    26 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     72%      23.7/31.9GB    94%      274W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>24000</td>
+        <td>8.113</td>
+        <td>90.043</td>
+        <td>2370</td>
+        <td>26.32</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    27 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     71%      24.7/31.9GB    94%      272W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>28000</td>
+        <td>8.101</td>
+        <td>82.896</td>
+        <td>2186</td>
+        <td>26.37</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    29 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     71%      25.7/31.9GB    94%      270W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>32000</td>
+        <td>8.101</td>
+        <td>80.585</td>
+        <td>2126</td>
+        <td>26.38</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    30 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       74     70%      26.7/31.9GB    94%      270W    
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>36000</td>
+        <td>8.124</td>
+        <td>98.818</td>
+        <td>2594</td>
+        <td>26.25</td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+deepseek-r1:32b    edba8017331d    31 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power   
+AMD Radeon Graphics(0)       75     72%      27.7/31.9GB    95%      274W    
+    </tr>
+</table></body></html>
