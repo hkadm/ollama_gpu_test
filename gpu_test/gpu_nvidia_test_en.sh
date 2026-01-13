@@ -87,8 +87,8 @@ Usage: $0 [-t max|test] [-p "prompt"] [-m model] [-c ctx] [-g group] [-h]
 Options:
   -t MODE     Execution mode:
                 max   — run the largest model from the group that fits in memory,
-                        then test with increasing context (default)
-                test  — test all models in the group from smallest to largest
+                        then test with increasing context (default). Do not create final report file!
+                test  — test all models in the group from smallest to largest and write report to test_result.html
   -p PROMPT   Prompt for generation (default: "Generate Tetris game on HTML and JS")
   -m MODEL    Run ONLY the specified model (ignores -t and -g)
   -c CTX      Use a fixed context size
@@ -223,12 +223,12 @@ test_model() {
              http://localhost:11434/api/generate > "$response_file"
 
         if [ ! -s "$response_file" ]; then
-            echo "❌ Empty response for $MODEL at num_ctx=$num_ctx"
+            echo "Empty response for $MODEL at num_ctx=$num_ctx"
             break
         fi
 
         if ! jq empty "$response_file" >/dev/null 2>&1; then
-            echo "❌ Invalid JSON for $MODEL at num_ctx=$num_ctx"
+            echo "Invalid JSON for $MODEL at num_ctx=$num_ctx"
             if grep -q "llama runner process has terminated: exit status 2" "$response_file" 2>/dev/null; then
                 echo "❗ Fatal error — stopping test for model $MODEL"
             fi
@@ -258,7 +258,7 @@ test_model() {
 
         local ollama_ps_output=$(ollama ps 2>/dev/null || echo "")
         if echo "$ollama_ps_output" | grep -q 'CPU'; then
-            echo "⚠️ [$MODEL] CPU usage detected — stopping test"
+            echo "[$MODEL] CPU usage detected — stopping test"
             break
         fi
 
@@ -284,7 +284,7 @@ test_model() {
         local gpu_percent=$(echo "$gpu_line" | grep -o '^[0-9]*' || "")
 
         if [ "$total_tokens" -eq 0 ] && [ -z "$gpu_percent" ]; then
-            echo "❌ [$MODEL] Empty result at num_ctx=$num_ctx — stopping"
+            echo "[$MODEL] Empty result at num_ctx=$num_ctx — stopping"
             break
         fi
 
@@ -312,7 +312,7 @@ test_model() {
             if [ $num_ctx -lt $max_ctx ]; then
                 local new_ctx=$((num_ctx + 4000))
                 if [ $new_ctx -gt $max_ctx ]; then new_ctx=$max_ctx; fi
-                echo "✅ [$MODEL] Increasing context → $new_ctx"
+                echo "[$MODEL] Increasing context → $new_ctx"
                 num_ctx=$new_ctx
                 sleep 3
             else
@@ -327,7 +327,7 @@ test_model() {
         echo "$model_results_html" >> /root/gpu_test/test_results.tmp
     fi
 
-    echo "✅ Model $MODEL fully tested."
+    echo "Model $MODEL fully tested."
 }
 
 # ========== STEP 2: SELECT EXECUTION MODE ==========
@@ -346,7 +346,7 @@ get_sorted_models_from_group() {
 if [ -n "$SINGLE_MODEL" ]; then
     # Single-model mode
     if [ -z "${MODEL_VRAM[$SINGLE_MODEL]+_}" ]; then
-        echo "⚠️ Model '$SINGLE_MODEL' is not supported."
+        echo "Model '$SINGLE_MODEL' is not supported."
         echo "Supported models:"
         for m in "${ALL_MODELS[@]}"; do
             echo "  - $m (${MODEL_VRAM[$m]} GiB)"
@@ -356,12 +356,12 @@ if [ -n "$SINGLE_MODEL" ]; then
 
     required_vram="${MODEL_VRAM[$SINGLE_MODEL]}"
     if [ "$(echo "$total_available < $required_vram" | bc -l)" = "1" ]; then
-        echo "❌ Insufficient memory for model $SINGLE_MODEL (requires $required_vram GiB, available: $total_available GiB)."
+        echo "Insufficient memory for model $SINGLE_MODEL (requires $required_vram GiB, available: $total_available GiB)."
         exit 1
     fi
 
     test_model "$SINGLE_MODEL"
-    echo "🏁 Done. Results in /root/gpu_test/"
+    echo "Done. Results in /root/gpu_test/"
 
 else
     # Group-based mode
@@ -382,10 +382,10 @@ else
 
         echo "Selected model from group '$SELECTED_GROUP': $SELECTED_MODEL"
         test_model "$SELECTED_MODEL"
-        echo "🏁 Done. Results in /root/gpu_test/"
+        echo "Done. Results in /root/gpu_test/"
 
     elif [ "$TEST_MODE" == "test" ]; then
-        echo "🧪 Testing all models in group '$SELECTED_GROUP'..."
+        echo "Testing all models in group '$SELECTED_GROUP'..."
 
         escaped_prompt=$(printf '%s' "$PROMPT" | sed 's/&/\&amp;/g; s/</\</g; s/>/\>/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
 
@@ -414,7 +414,7 @@ EOF
         done
 
         if [ ${#models_to_run[@]} -eq 0 ]; then
-            echo "❌ Not enough memory to run any model from group '$SELECTED_GROUP'."
+            echo "Not enough memory to run any model from group '$SELECTED_GROUP'."
             echo "<p>Not enough memory to run any model from group '$SELECTED_GROUP'.</p>" >> /root/gpu_test/test_result.html
         else
             > /root/gpu_test/test_results.tmp
@@ -426,7 +426,7 @@ EOF
         fi
 
         echo "</table></body></html>" >> /root/gpu_test/test_result.html
-        echo "✅ Report saved: /root/gpu_test/test_result.html"
+        echo "Report saved: /root/gpu_test/test_result.html"
 
     else
         echo "Error: unknown mode '$TEST_MODE'"

@@ -87,8 +87,8 @@ Usage: $0 [-t max|test] [-p "prompt"] [-m model] [-c ctx] [-g group] [-h]
 Options:
   -t MODE     Execution mode:
                 max  — run the largest model from the group that fits in memory,
-                       then test with increasing context (default)
-                test — test all models in the group from smallest to largest
+                       then test with increasing context (default). Do not create final report file!
+                test — test all models in the group from smallest to largest and write report to test_result.html
   -p PROMPT   Prompt for generation (default: "Generate Tetris game on HTML and JS")
   -m MODEL    Run ONLY the specified model (ignores -t and -g)
   -c CTX      Use a fixed context size
@@ -279,7 +279,7 @@ test_model() {
         max_ctx="$FIXED_CTX"
     fi
 
-    echo "🚀 Starting model: $MODEL"
+    echo "Starting model: $MODEL"
 
     echo "Pulling model..."
     ollama pull "$MODEL" || { echo "❌ Failed to pull model $MODEL"; return 1; }
@@ -402,7 +402,7 @@ test_model() {
         echo "$model_results_html" >> /root/gpu_test/test_results.tmp
     fi
 
-    echo "✅ Model $MODEL fully tested."
+    echo "Model $MODEL fully tested."
 }
 
 # ========== STEP 2: SELECT EXECUTION MODE ==========
@@ -436,7 +436,7 @@ if [ -n "$SINGLE_MODEL" ]; then
     fi
 
     test_model "$SINGLE_MODEL"
-    echo "🏁 Done. Results in /root/gpu_test/"
+    echo "Done. Results in /root/gpu_test/"
 
 else
     # Group-based mode
@@ -460,7 +460,7 @@ else
         echo "Done. Results in /root/gpu_test/"
 
     elif [ "$TEST_MODE" == "test" ]; then
-        echo "🧪 Testing all models in group '$SELECTED_GROUP'..."
+        echo "Testing all models in group '$SELECTED_GROUP'..."
 
         escaped_prompt=$(printf '%s' "$PROMPT" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')
 
@@ -509,7 +509,7 @@ EOF
         fi
 
         echo "</table></body></html>" >> /root/gpu_test/test_result.html
-        echo "✅ Report saved: /root/gpu_test/test_result.html"
+        echo "Report saved: /root/gpu_test/test_result.html"
 
     else
         echo "Error: unknown mode '$TEST_MODE'"
