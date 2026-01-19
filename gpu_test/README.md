@@ -20,8 +20,8 @@ The script automatically:
 - Root or sudo permissions.
 - At least **16 GB of video memory** to run the smallest model.
 
-!!! warning "Attention"
-    The script does not work on CPU-only systems and will stop with an error if VRAM < 16 GB.
+> [!WARNING]
+> The script does not work on CPU-only systems and will stop with an error if VRAM < 16 GB.
 
 ## Installation and Launch
 
@@ -73,8 +73,8 @@ The script automatically:
 | `ministral3` | `ministral-3:8b`, `ministral-3:14b` | 7 / 15 Gib |
 
 
-!!! warning "Attention"
-    The script automatically skips models for which there is insufficient video memory.
+> [!WARNING]
+> The script automatically skips models for which there is insufficient video memory.
 
 ## Usage Examples
 
@@ -175,10 +175,9 @@ Testing stops if:
 - an empty response is received.
 - insufficient video memory for the current request `model-context`.
 
-!!! warning "Attention"
-
-    - Do not run the script on systems without a GPU — it is not intended for CPU-only.
-    - Ensure that drivers are installed for the graphics card and CUDA.
+> [!WARNING]
+> - Do not run the script on systems without a GPU — it is not intended for CPU-only.
+> - Ensure that drivers are installed for the graphics card and CUDA.
 
 ## Tips
 
