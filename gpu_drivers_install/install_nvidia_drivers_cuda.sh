@@ -20,9 +20,11 @@ CUDA_TOOLKIT_PKG="cuda-toolkit"
 CUDA_META_PKG="cuda"
 
 # Special-case GPU handling (example kept from original)
-GTX1080TI_PCI_ID="10de:1b06"
-DO_GTX1080TI_DRIVER_PIN=1
-GTX1080TI_DRIVER_PKG="nvidia-driver-535"   # Same as your original
+SPECIAL_GPUS=(
+  "10de:1b06|GTX1080 Ti|nvidia-driver-535"
+  "10de:1db1|Tesla V100|nvidia-driver-535"  # Добавили Tesla V100
+)
+
 
 DO_BLACKLIST_NOUVEAU=1               # Create blacklist + update-initramfs (reboot needed)
 DO_TRY_RMMOD_NOUVEAU=1               # Best effort rmmod nouveau (may fail if in use)
@@ -164,17 +166,23 @@ EOF
 fi
 
 # Install driver/CUDA
-if lspci -nn | grep -q "${GTX1080TI_PCI_ID}"; then
-  echo "Detected GTX 1080 Ti (${GTX1080TI_PCI_ID})."
+SPECIAL_CARD_INSTALLED=0
+DETECTED_GPUS="$(lspci -nn)"
 
-  if [[ "${DO_GTX1080TI_DRIVER_PIN}" -eq 1 ]]; then
-    echo "Installing pinned driver package: ${GTX1080TI_DRIVER_PKG}"
-    sudo apt install -y "${GTX1080TI_DRIVER_PKG}"
-  else
-    echo "Installing default driver via meta packages..."
-    sudo apt install -y nvidia-driver
+for gpu_spec in "${SPECIAL_GPUS[@]}"; do
+  IFS='|' read -r pci_id gpu_name driver_pkg <<< "${gpu_spec}"
+  
+  if echo "${DETECTED_GPUS}" | grep -q "${pci_id}"; then
+    echo "Detected ${gpu_name} (${pci_id})."
+    echo "Installing pinned driver package: ${driver_pkg}"
+    sudo apt install -y "${driver_pkg}"
+    SPECIAL_CARD_INSTALLED=1
+    break
   fi
-else
+done
+
+# Если не найдены специальные карты - стандартная установка
+if [[ "${SPECIAL_CARD_INSTALLED}" -eq 0 ]]; then
   if [[ "${DO_INSTALL_CUDA_STACK}" -eq 1 ]]; then
     echo "Installing CUDA toolkit..."
     sudo apt install -y "${CUDA_TOOLKIT_PKG}"
