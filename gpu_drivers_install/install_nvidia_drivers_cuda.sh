@@ -9,6 +9,7 @@ ALLOWED_UBUNTU_VERSIONS=("22.04" "24.04")
 
 DO_APT_UPGRADE=1                     # apt update/upgrade
 DO_INSTALL_HWE_2204=1                # Install linux-generic-hwe-22.04 on 22.04
+DO_INSTALL_KERNEL_HEADERS=1          # Install linux-headers for current kernel
 DO_INSTALL_BUILD_TOOLS=1             # Install GCC/G++
 GCC_PACKAGES=("gcc-12" "g++-12")
 
@@ -118,6 +119,16 @@ if [[ "${DO_INSTALL_HWE_2204}" -eq 1 ]] && [[ "${UBUNTU_VERSION}" == "22.04" ]];
   echo "Ubuntu 22.04 detected: installing HWE kernel package..."
   sudo apt install -y linux-generic-hwe-22.04
   REBOOT_REQUIRED=1
+fi
+
+# Install kernel headers for current kernel (required for DKMS)
+if [[ "${DO_INSTALL_KERNEL_HEADERS}" -eq 1 ]]; then
+  CURRENT_KERNEL="$(uname -r)"
+  echo "Installing kernel headers for: ${CURRENT_KERNEL}"
+  sudo apt install -y "linux-headers-${CURRENT_KERNEL}" || {
+    echo "Failed to install linux-headers-${CURRENT_KERNEL}. DKMS may fail."
+    exit 1
+  }
 fi
 
 # Build tools for Nvidia
