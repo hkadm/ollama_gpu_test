@@ -1,0 +1,297 @@
+<html><head><title>Ollama Test Report — Group: deepseekr1</title></head><body>
+<h1>Ollama Model Test Report — Group: deepseekr1</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>4000</td>
+        <td>4.465</td>
+        <td>35.266</td>
+        <td>2321</td>
+        <td>65.81</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    9.7 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11265 MiB    16384 MiB    44°C        66.85 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        36.89 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>8000</td>
+        <td>4.504</td>
+        <td>35.700</td>
+        <td>2356</td>
+        <td>65.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    10 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11991 MiB    16384 MiB    52°C        69.80 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        36.89 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>12000</td>
+        <td>4.474</td>
+        <td>40.553</td>
+        <td>2657</td>
+        <td>65.51</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    11 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12721 MiB    16384 MiB    58°C        72.75 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        37.38 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>16000</td>
+        <td>4.464</td>
+        <td>36.932</td>
+        <td>2432</td>
+        <td>65.85</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    13 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13489 MiB    16384 MiB    59°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        37.38 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>20000</td>
+        <td>4.495</td>
+        <td>33.194</td>
+        <td>2188</td>
+        <td>65.91</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14257 MiB    16384 MiB    58°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        36.89 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>24000</td>
+        <td>4.466</td>
+        <td>42.296</td>
+        <td>2760</td>
+        <td>65.25</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    15 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15035 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  3 MiB        16384 MiB    22°C        36.89 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>28000</td>
+        <td>4.733</td>
+        <td>33.464</td>
+        <td>2203</td>
+        <td>65.83</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    18 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  7837 MiB     16384 MiB    50°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  8959 MiB     16384 MiB    34°C        65.86 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>32000</td>
+        <td>4.727</td>
+        <td>39.591</td>
+        <td>2587</td>
+        <td>65.34</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    20 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  7989 MiB     16384 MiB    44°C        66.80 W      300.00 W
+1     Tesla V100-SXM2-16GB  9579 MiB     16384 MiB    39°C        67.29 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>36000</td>
+        <td>4.731</td>
+        <td>41.482</td>
+        <td>2705</td>
+        <td>65.20</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    21 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  8425 MiB     16384 MiB    42°C        65.82 W      300.00 W
+1     Tesla V100-SXM2-16GB  9963 MiB     16384 MiB    41°C        68.28 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>40000</td>
+        <td>4.733</td>
+        <td>41.742</td>
+        <td>2721</td>
+        <td>65.18</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    23 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  8861 MiB     16384 MiB    41°C        65.86 W      300.00 W
+1     Tesla V100-SXM2-16GB  10347 MiB    16384 MiB    43°C        68.81 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>44000</td>
+        <td>4.799</td>
+        <td>35.518</td>
+        <td>2329</td>
+        <td>65.57</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    24 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  9269 MiB     16384 MiB    41°C        65.82 W      300.00 W
+1     Tesla V100-SXM2-16GB  10705 MiB    16384 MiB    43°C        68.77 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>48000</td>
+        <td>4.729</td>
+        <td>38.902</td>
+        <td>2545</td>
+        <td>65.42</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    26 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  9705 MiB     16384 MiB    40°C        65.33 W      300.00 W
+1     Tesla V100-SXM2-16GB  11089 MiB    16384 MiB    43°C        69.30 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>52000</td>
+        <td>4.735</td>
+        <td>52.413</td>
+        <td>3384</td>
+        <td>64.56</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    27 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  10141 MiB    16384 MiB    40°C        65.33 W      300.00 W
+1     Tesla V100-SXM2-16GB  11473 MiB    16384 MiB    44°C        69.26 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>56000</td>
+        <td>4.751</td>
+        <td>44.328</td>
+        <td>2887</td>
+        <td>65.12</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx56000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    29 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  10549 MiB    16384 MiB    40°C        65.37 W      300.00 W
+1     Tesla V100-SXM2-16GB  11835 MiB    16384 MiB    44°C        69.30 W      300.00 W   </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>4000</td>
+        <td>7.740</td>
+        <td>76.114</td>
+        <td>2498</td>
+        <td>32.81</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    21 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  10669 MiB    16384 MiB    41°C        65.37 W      300.00 W
+1     Tesla V100-SXM2-16GB  12155 MiB    16384 MiB    43°C        68.81 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>8000</td>
+        <td>7.670</td>
+        <td>79.227</td>
+        <td>2598</td>
+        <td>32.79</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    22 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11233 MiB    16384 MiB    43°C        66.31 W      300.00 W
+1     Tesla V100-SXM2-16GB  12667 MiB    16384 MiB    47°C        70.29 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>12000</td>
+        <td>7.780</td>
+        <td>73.455</td>
+        <td>2412</td>
+        <td>32.83</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    24 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11751 MiB    16384 MiB    43°C        66.80 W      300.00 W
+1     Tesla V100-SXM2-16GB  13149 MiB    16384 MiB    47°C        70.73 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>16000</td>
+        <td>7.798</td>
+        <td>79.252</td>
+        <td>2600</td>
+        <td>32.80</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    26 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12315 MiB    16384 MiB    43°C        66.31 W      300.00 W
+1     Tesla V100-SXM2-16GB  13661 MiB    16384 MiB    47°C        70.73 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>20000</td>
+        <td>7.806</td>
+        <td>82.213</td>
+        <td>2692</td>
+        <td>32.74</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    28 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12879 MiB    16384 MiB    42°C        65.82 W      300.00 W
+1     Tesla V100-SXM2-16GB  14173 MiB    16384 MiB    45°C        69.80 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>24000</td>
+        <td>8.044</td>
+        <td>79.982</td>
+        <td>2623</td>
+        <td>32.79</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    29 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13417 MiB    16384 MiB    43°C        66.31 W      300.00 W
+1     Tesla V100-SXM2-16GB  14651 MiB    16384 MiB    47°C        70.73 W      300.00 W   </pre></td>
+    </tr>
+</table></body></html>

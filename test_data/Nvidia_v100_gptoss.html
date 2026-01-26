@@ -1,0 +1,464 @@
+<html><head><title>Ollama Test Report — Group: gpt-oss</title></head><body>
+<h1>Ollama Model Test Report — Group: gpt-oss</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>4000</td>
+        <td>0.349</td>
+        <td>20.687</td>
+        <td>2485</td>
+        <td>120.12</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8192       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12915 MiB    16384 MiB    34°C        64.39 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        54.07 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>8000</td>
+        <td>0.308</td>
+        <td>27.087</td>
+        <td>3264</td>
+        <td>120.49</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     8192       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12915 MiB    16384 MiB    42°C        65.37 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>12000</td>
+        <td>6.114</td>
+        <td>24.508</td>
+        <td>2944</td>
+        <td>120.12</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13013 MiB    16384 MiB    44°C        67.34 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>16000</td>
+        <td>6.073</td>
+        <td>21.545</td>
+        <td>2598</td>
+        <td>120.58</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13121 MiB    16384 MiB    45°C        67.29 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>20000</td>
+        <td>6.154</td>
+        <td>18.987</td>
+        <td>2287</td>
+        <td>120.45</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13229 MiB    16384 MiB    45°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>24000</td>
+        <td>6.208</td>
+        <td>20.463</td>
+        <td>2472</td>
+        <td>120.80</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13325 MiB    16384 MiB    46°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>28000</td>
+        <td>6.221</td>
+        <td>21.178</td>
+        <td>2554</td>
+        <td>120.59</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13429 MiB    16384 MiB    46°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        53.58 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>32000</td>
+        <td>6.243</td>
+        <td>27.425</td>
+        <td>3306</td>
+        <td>120.54</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    14 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13533 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>36000</td>
+        <td>6.029</td>
+        <td>22.400</td>
+        <td>2695</td>
+        <td>120.31</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13637 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>40000</td>
+        <td>6.305</td>
+        <td>23.558</td>
+        <td>2843</td>
+        <td>120.68</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13741 MiB    16384 MiB    47°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>44000</td>
+        <td>6.311</td>
+        <td>25.189</td>
+        <td>3025</td>
+        <td>120.09</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13845 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>48000</td>
+        <td>6.359</td>
+        <td>24.714</td>
+        <td>2993</td>
+        <td>121.10</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13949 MiB    16384 MiB    47°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>52000</td>
+        <td>6.337</td>
+        <td>17.593</td>
+        <td>2122</td>
+        <td>120.61</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14053 MiB    16384 MiB    47°C        68.28 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>56000</td>
+        <td>6.416</td>
+        <td>18.723</td>
+        <td>2263</td>
+        <td>120.86</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx56000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14155 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>60000</td>
+        <td>6.435</td>
+        <td>16.964</td>
+        <td>2051</td>
+        <td>120.90</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx60000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14261 MiB    16384 MiB    46°C        68.28 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        53.08 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>64000</td>
+        <td>6.442</td>
+        <td>23.491</td>
+        <td>2835</td>
+        <td>120.68</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx64000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14369 MiB    16384 MiB    47°C        68.28 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>68000</td>
+        <td>6.441</td>
+        <td>30.523</td>
+        <td>3683</td>
+        <td>120.66</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx68000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    15 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14477 MiB    16384 MiB    48°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        53.08 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>72000</td>
+        <td>6.496</td>
+        <td>33.346</td>
+        <td>4014</td>
+        <td>120.37</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx72000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14585 MiB    16384 MiB    48°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>76000</td>
+        <td>6.575</td>
+        <td>22.616</td>
+        <td>2732</td>
+        <td>120.80</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx76000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14691 MiB    16384 MiB    48°C        68.81 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>80000</td>
+        <td>6.281</td>
+        <td>26.006</td>
+        <td>3138</td>
+        <td>120.66</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx80000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14799 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>84000</td>
+        <td>6.516</td>
+        <td>26.110</td>
+        <td>3145</td>
+        <td>120.45</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx84000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14907 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>88000</td>
+        <td>6.613</td>
+        <td>20.123</td>
+        <td>2440</td>
+        <td>121.25</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx88000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14967 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>92000</td>
+        <td>6.406</td>
+        <td>19.758</td>
+        <td>2399</td>
+        <td>121.41</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx92000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15075 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>96000</td>
+        <td>6.439</td>
+        <td>24.617</td>
+        <td>2979</td>
+        <td>121.01</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx96000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15183 MiB    16384 MiB    47°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    26°C        53.58 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>100000</td>
+        <td>6.680</td>
+        <td>24.899</td>
+        <td>2998</td>
+        <td>120.40</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx100000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15291 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        53.58 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>104000</td>
+        <td>6.686</td>
+        <td>20.490</td>
+        <td>2479</td>
+        <td>120.98</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx104000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15399 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.59 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>108000</td>
+        <td>6.750</td>
+        <td>21.610</td>
+        <td>2611</td>
+        <td>120.82</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx108000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    16 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15505 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>112000</td>
+        <td>6.685</td>
+        <td>23.553</td>
+        <td>2852</td>
+        <td>121.08</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx112000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15613 MiB    16384 MiB    45°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        53.08 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>116000</td>
+        <td>6.814</td>
+        <td>25.059</td>
+        <td>3013</td>
+        <td>120.23</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx116000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15721 MiB    16384 MiB    46°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        53.58 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>120000</td>
+        <td>6.832</td>
+        <td>18.681</td>
+        <td>2245</td>
+        <td>120.17</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx120000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15829 MiB    16384 MiB    45°C        67.83 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>124000</td>
+        <td>6.867</td>
+        <td>27.720</td>
+        <td>3341</td>
+        <td>120.52</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx124000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     124000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15937 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>gpt-oss:20b</td>
+        <td>128000</td>
+        <td>6.948</td>
+        <td>24.260</td>
+        <td>2934</td>
+        <td>120.93</td>
+        <td><a href="/root/gpu_test/tetris_gpt-oss_20b_ctx128000.html" target="_blank">View</a></td>
+        <td><pre>NAME           ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+gpt-oss:20b    17052f91a42e    17 GB    100% GPU     128000     4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  16045 MiB    16384 MiB    46°C        68.32 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+</table></body></html>

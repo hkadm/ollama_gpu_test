@@ -1,0 +1,198 @@
+<html><head><title>Ollama Test Report — Group: qwen3</title></head><body>
+<h1>Ollama Model Test Report — Group: qwen3</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table border='1'><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>nvidia-smi</th>
+</tr>
+
+    <tr>
+        <td>qwen3:14b</td>
+        <td>4000</td>
+        <td>4.157</td>
+        <td>127.131</td>
+        <td>7900</td>
+        <td>62.14</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    10 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  9763 MiB     16384 MiB    59°C        73.28 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        52.17 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>8000</td>
+        <td>4.188</td>
+        <td>53.986</td>
+        <td>3435</td>
+        <td>63.62</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    10 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  10395 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        54.07 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>12000</td>
+        <td>4.446</td>
+        <td>235.642</td>
+        <td>13389</td>
+        <td>56.81</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    11 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11045 MiB    16384 MiB    59°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>16000</td>
+        <td>4.239</td>
+        <td>182.211</td>
+        <td>10665</td>
+        <td>58.53</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    12 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  11697 MiB    16384 MiB    60°C        73.24 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>20000</td>
+        <td>4.275</td>
+        <td>253.107</td>
+        <td>14264</td>
+        <td>56.35</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    12 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12347 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        53.08 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>24000</td>
+        <td>4.363</td>
+        <td>50.377</td>
+        <td>3220</td>
+        <td>63.91</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    13 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  12995 MiB    16384 MiB    60°C        74.22 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.13 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>28000</td>
+        <td>4.339</td>
+        <td>265.105</td>
+        <td>14859</td>
+        <td>56.04</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    14 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  13647 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.10 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>32000</td>
+        <td>4.615</td>
+        <td>47.763</td>
+        <td>3056</td>
+        <td>63.98</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    14 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14297 MiB    16384 MiB    60°C        74.22 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.10 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>36000</td>
+        <td>4.368</td>
+        <td>45.426</td>
+        <td>2909</td>
+        <td>64.03</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    15 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  14915 MiB    16384 MiB    60°C        74.22 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>40000</td>
+        <td>4.659</td>
+        <td>229.050</td>
+        <td>13059</td>
+        <td>57.01</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    16 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15567 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    25°C        54.56 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>44000</td>
+        <td>4.431</td>
+        <td>161.878</td>
+        <td>9590</td>
+        <td>59.24</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    16 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15571 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.13 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>48000</td>
+        <td>4.482</td>
+        <td>227.165</td>
+        <td>12952</td>
+        <td>57.01</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    16 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15571 MiB    16384 MiB    59°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.10 W      300.00 W   </pre></td>
+    </tr>
+    <tr>
+        <td>qwen3:14b</td>
+        <td>52000</td>
+        <td>4.428</td>
+        <td>211.909</td>
+        <td>12180</td>
+        <td>57.47</td>
+        <td><a href="/root/gpu_test/tetris_qwen3_14b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME         ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+qwen3:14b    bdbd181c33f2    16 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU  Name                 Mem used     Mem total    Temp         Power draw   Power lim
+0     Tesla V100-SXM2-16GB  15571 MiB    16384 MiB    60°C        73.73 W      300.00 W
+1     Tesla V100-SXM2-16GB  309 MiB      16384 MiB    24°C        52.13 W      300.00 W   </pre></td>
+    </tr>
+</table></body></html>

@@ -31,3 +31,7 @@ Prompt: Generate Tetris game on HTML and JS.
 | AMD RADEON AI PRO R9700 | 32 GB | deepseek-r1:14b | 53.52 | 80 000 | 6.74 | 50.50 | |
 | AMD RADEON AI PRO R9700 | 32 GB | deepseek-r1:32b | 26.29 | 36 000 | 8.11 | 92.89 | |
 | AMD RADEON AI PRO R9700 | 32 GB | gpt-oss:20b | 102.40 | 128 000 | 5.71 | 28.22 | Mixture of Experts |
+| 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | deepseek-r1:14b | 65.47 | 56 000 | 4.63 | 39.38 | Max Nvidia drivers version 535 and CUDA 12.2 |
+| 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | deepseek-r1:32b | 32.79 | 24 000 | 7.81 | 78.37 | Max Nvidia drivers version 535 and CUDA 12.2 |
+| 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | gpt-oss:20b | 120.65 | 128 000 | 6.07 | 23.25 | Max Nvidia drivers version 535 and CUDA 12.2 |
+| 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | qwen3:14b | 59.70 | 52 000 | 4.38 | 160.83 | Max Nvidia drivers version 535 and CUDA 12.2 |
