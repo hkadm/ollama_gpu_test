@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html><head><title>Ollama Test Report — Group: deepseekr1 (AMD GPU)</title>
+<style>
+table {border-collapse: collapse; width: 100%; font-family: monospace;}
+th, td {border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 11px;}
+th {background-color: #f2f2f2;}
+pre {margin: 0; font-size: 10px; white-space: pre-wrap; max-height: 200px; overflow: auto;}
+</style>
+</head><body>
+<h1>Ollama Model Test Report — Group: deepseekr1 (AMD GPU)</h1>
+<p><strong>Prompt:</strong> Generate Tetris game on HTML and JS</p>
+<table><tr>
+<th>Model</th>
+<th>Context</th>
+<th>Load (sec)</th>
+<th>Gen (sec)</th>
+<th>Tokens</th>
+<th>Tokens/sec</th>
+<th>HTML</th>
+<th>Ollama PS</th>
+<th>AMD Metrics</th>
+</tr>
+
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>4000</td>
+        <td>14.748</td>
+        <td>47.406</td>
+        <td>2491</td>
+        <td>52.54</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    9.7 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       13     0%       0.1/31.9GB     1%       14W
+AMD Radeon Graphics(1)       39     43%      9.5/31.9GB     67%      200W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>8000</td>
+        <td>11.899</td>
+        <td>54.336</td>
+        <td>2833</td>
+        <td>52.13</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    10 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       16     0%       0.1/31.9GB     0%       12W
+AMD Radeon Graphics(1)       48     53%      10.2/31.9GB    86%      246W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>12000</td>
+        <td>11.530</td>
+        <td>46.481</td>
+        <td>2432</td>
+        <td>52.32</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    11 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       18     0%       0.1/31.9GB     0%       12W
+AMD Radeon Graphics(1)       57     51%      10.9/31.9GB    83%      241W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>16000</td>
+        <td>11.736</td>
+        <td>54.639</td>
+        <td>2840</td>
+        <td>51.97</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    13 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       19     0%       0.1/31.9GB     0%       12W
+AMD Radeon Graphics(1)       59     53%      11.6/31.9GB    88%      248W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>20000</td>
+        <td>11.511</td>
+        <td>51.621</td>
+        <td>2690</td>
+        <td>52.11</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    14 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       21     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       61     0%       12.4/31.9GB    100%     82W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>24000</td>
+        <td>11.599</td>
+        <td>53.379</td>
+        <td>2776</td>
+        <td>52.00</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    15 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       22     0%       0.1/31.9GB     8%       15W
+AMD Radeon Graphics(1)       62     53%      13.1/31.9GB    88%      247W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>28000</td>
+        <td>11.836</td>
+        <td>58.807</td>
+        <td>3050</td>
+        <td>51.86</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    16 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       23     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       62     53%      13.8/31.9GB    89%      251W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>32000</td>
+        <td>11.786</td>
+        <td>46.332</td>
+        <td>2417</td>
+        <td>52.16</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    17 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       24     0%       0.1/31.9GB     8%       16W
+AMD Radeon Graphics(1)       62     51%      14.5/31.9GB    82%      241W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>36000</td>
+        <td>11.604</td>
+        <td>48.037</td>
+        <td>2507</td>
+        <td>52.18</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    18 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       25     0%       0.1/31.9GB     8%       15W
+AMD Radeon Graphics(1)       63     51%      15.2/31.9GB    81%      243W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>40000</td>
+        <td>11.667</td>
+        <td>53.090</td>
+        <td>2758</td>
+        <td>51.94</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    19 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       26     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     53%      16.0/31.9GB    81%      242W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>44000</td>
+        <td>11.742</td>
+        <td>41.493</td>
+        <td>2174</td>
+        <td>52.39</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    20 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       26     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     50%      16.7/31.9GB    85%      236W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>48000</td>
+        <td>11.768</td>
+        <td>49.356</td>
+        <td>2573</td>
+        <td>52.13</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    22 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       26     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       62     0%       17.5/31.9GB    3%       38W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>52000</td>
+        <td>11.708</td>
+        <td>46.581</td>
+        <td>2432</td>
+        <td>52.21</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    23 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     8%       16W
+AMD Radeon Graphics(1)       62     51%      18.3/31.9GB    73%      236W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>56000</td>
+        <td>11.765</td>
+        <td>53.658</td>
+        <td>2790</td>
+        <td>51.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx56000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    24 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       26     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       62     0%       19.0/31.9GB    100%     83W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>60000</td>
+        <td>11.743</td>
+        <td>54.208</td>
+        <td>2817</td>
+        <td>51.96</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx60000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    25 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     11%      16W
+AMD Radeon Graphics(1)       63     53%      19.8/31.9GB    88%      247W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>64000</td>
+        <td>11.693</td>
+        <td>50.999</td>
+        <td>2656</td>
+        <td>52.07</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx64000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    26 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     0%       20.5/31.9GB    100%     82W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>68000</td>
+        <td>11.829</td>
+        <td>41.970</td>
+        <td>2198</td>
+        <td>52.37</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx68000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    27 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     50%      21.2/31.9GB    84%      236W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>72000</td>
+        <td>11.671</td>
+        <td>44.597</td>
+        <td>2333</td>
+        <td>52.31</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx72000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    28 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     51%      21.9/31.9GB    81%      239W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>76000</td>
+        <td>11.783</td>
+        <td>42.678</td>
+        <td>2233</td>
+        <td>52.32</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx76000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    29 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       62     0%       22.6/31.9GB    3%       39W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>80000</td>
+        <td>11.506</td>
+        <td>48.284</td>
+        <td>2522</td>
+        <td>52.23</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx80000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    31 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       27     0%       0.1/31.9GB     8%       16W
+AMD Radeon Graphics(1)       63     52%      23.3/31.9GB    80%      239W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>84000</td>
+        <td>12.274</td>
+        <td>42.575</td>
+        <td>2233</td>
+        <td>52.44</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx84000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    39 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       47     26%      12.6/31.9GB    73%      166W
+AMD Radeon Graphics(1)       60     24%      13.1/31.9GB    77%      158W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>88000</td>
+        <td>15.212</td>
+        <td>64.292</td>
+        <td>3330</td>
+        <td>51.79</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx88000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    40 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       55     27%      12.9/31.9GB    85%      183W
+AMD Radeon Graphics(1)       62     25%      13.5/31.9GB    84%      173W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>92000</td>
+        <td>15.033</td>
+        <td>50.903</td>
+        <td>2664</td>
+        <td>52.33</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx92000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    42 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       59     26%      13.3/31.9GB    83%      179W
+AMD Radeon Graphics(1)       62     0%       14.0/31.9GB    100%     93W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>96000</td>
+        <td>15.217</td>
+        <td>52.940</td>
+        <td>2773</td>
+        <td>52.38</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx96000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    43 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       61     26%      13.7/31.9GB    83%      182W
+AMD Radeon Graphics(1)       62     24%      14.4/31.9GB    84%      169W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>100000</td>
+        <td>15.245</td>
+        <td>50.413</td>
+        <td>2583</td>
+        <td>51.23</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx100000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    45 GB    100% GPU     100000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       61     25%      14.0/31.9GB    71%      174W
+AMD Radeon Graphics(1)       58     0%       14.8/31.9GB    3%       34W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>104000</td>
+        <td>15.153</td>
+        <td>46.604</td>
+        <td>2447</td>
+        <td>52.50</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx104000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    46 GB    100% GPU     104000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       62     25%      14.4/31.9GB    75%      173W
+AMD Radeon Graphics(1)       60     23%      15.2/31.9GB    75%      159W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>108000</td>
+        <td>14.968</td>
+        <td>53.273</td>
+        <td>2784</td>
+        <td>52.25</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx108000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    47 GB    100% GPU     108000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       63     26%      14.8/31.9GB    84%      185W
+AMD Radeon Graphics(1)       61     25%      15.6/31.9GB    84%      170W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>112000</td>
+        <td>15.338</td>
+        <td>64.016</td>
+        <td>3317</td>
+        <td>51.81</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx112000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    49 GB    100% GPU     112000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     0%       15.1/31.9GB    100%     99W
+AMD Radeon Graphics(1)       62     25%      16.0/31.9GB    81%      168W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>116000</td>
+        <td>15.139</td>
+        <td>44.084</td>
+        <td>2296</td>
+        <td>52.08</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx116000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    50 GB    100% GPU     116000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       63     25%      15.5/31.9GB    76%      173W
+AMD Radeon Graphics(1)       60     23%      16.5/31.9GB    65%      139W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>120000</td>
+        <td>15.171</td>
+        <td>42.839</td>
+        <td>2208</td>
+        <td>51.54</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx120000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    52 GB    100% GPU     120000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       62     25%      16.4/31.9GB    70%      172W
+AMD Radeon Graphics(1)       56     22%      16.2/31.9GB    43%      106W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>124000</td>
+        <td>15.218</td>
+        <td>49.852</td>
+        <td>2569</td>
+        <td>51.53</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx124000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    53 GB    100% GPU     124000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       62     26%      16.9/31.9GB    68%      173W
+AMD Radeon Graphics(1)       55     23%      16.7/31.9GB    48%      119W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:14b</td>
+        <td>128000</td>
+        <td>15.200</td>
+        <td>39.930</td>
+        <td>2076</td>
+        <td>51.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_14b_ctx128000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:14b    c333b7232bdb    55 GB    100% GPU     128000     4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       62     25%      17.2/31.9GB    73%      172W
+AMD Radeon Graphics(1)       55     22%      17.0/31.9GB    57%      124W    </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>4000</td>
+        <td>17.921</td>
+        <td>104.904</td>
+        <td>2703</td>
+        <td>25.76</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    20 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       39     0%       0.1/31.9GB     60%      54W
+AMD Radeon Graphics(1)       61     24%      19.8/31.9GB    91%      142W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>8000</td>
+        <td>14.999</td>
+        <td>75.480</td>
+        <td>1960</td>
+        <td>25.96</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    22 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       35     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       63     0%       20.8/31.9GB    100%     83W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>12000</td>
+        <td>14.971</td>
+        <td>98.511</td>
+        <td>2542</td>
+        <td>25.80</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    23 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       32     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       65     0%       21.8/31.9GB    100%     84W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>16000</td>
+        <td>14.916</td>
+        <td>82.820</td>
+        <td>2139</td>
+        <td>25.82</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    24 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       30     0%       0.1/31.9GB     11%      16W
+AMD Radeon Graphics(1)       64     63%      22.7/31.9GB    89%      255W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>20000</td>
+        <td>15.076</td>
+        <td>84.451</td>
+        <td>2187</td>
+        <td>25.89</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    26 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       30     0%       0.1/31.9GB     11%      16W
+AMD Radeon Graphics(1)       65     63%      23.7/31.9GB    88%      255W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>24000</td>
+        <td>15.074</td>
+        <td>94.599</td>
+        <td>2448</td>
+        <td>25.87</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    27 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       29     0%       0.1/31.9GB     11%      16W
+AMD Radeon Graphics(1)       65     64%      24.7/31.9GB    89%      260W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>28000</td>
+        <td>14.922</td>
+        <td>87.600</td>
+        <td>2272</td>
+        <td>25.93</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    29 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       29     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       65     0%       25.7/31.9GB    100%     84W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>32000</td>
+        <td>14.976</td>
+        <td>98.834</td>
+        <td>2558</td>
+        <td>25.88</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    30 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       28     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       65     0%       26.7/31.9GB    3%       41W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>36000</td>
+        <td>14.884</td>
+        <td>79.554</td>
+        <td>2068</td>
+        <td>25.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    31 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       28     0%       0.1/31.9GB     0%       13W
+AMD Radeon Graphics(1)       64     0%       27.7/31.9GB    100%     86W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>40000</td>
+        <td>15.227</td>
+        <td>97.064</td>
+        <td>2516</td>
+        <td>25.92</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx40000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    36 GB    100% GPU     40000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       52     33%      14.7/31.9GB    83%      172W
+AMD Radeon Graphics(1)       64     0%       15.0/31.9GB    100%     82W     </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>44000</td>
+        <td>15.537</td>
+        <td>91.549</td>
+        <td>2380</td>
+        <td>25.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx44000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    38 GB    100% GPU     44000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       60     0%       15.2/31.9GB    100%     80W
+AMD Radeon Graphics(1)       65     32%      15.6/31.9GB    89%      181W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>48000</td>
+        <td>15.501</td>
+        <td>88.685</td>
+        <td>2295</td>
+        <td>25.87</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx48000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    40 GB    100% GPU     48000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       62     32%      15.7/31.9GB    83%      177W
+AMD Radeon Graphics(1)       64     32%      16.1/31.9GB    56%      147W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>52000</td>
+        <td>15.482</td>
+        <td>96.205</td>
+        <td>2503</td>
+        <td>26.01</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx52000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    41 GB    100% GPU     52000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     33%      16.2/31.9GB    90%      183W
+AMD Radeon Graphics(1)       65     32%      16.7/31.9GB    90%      183W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>56000</td>
+        <td>15.539</td>
+        <td>93.762</td>
+        <td>2431</td>
+        <td>25.92</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx56000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    43 GB    100% GPU     56000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       66     32%      16.7/31.9GB    89%      184W
+AMD Radeon Graphics(1)       65     32%      17.2/31.9GB    89%      183W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>60000</td>
+        <td>15.432</td>
+        <td>101.329</td>
+        <td>2625</td>
+        <td>25.90</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx60000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    45 GB    100% GPU     60000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     33%      17.2/31.9GB    90%      185W
+AMD Radeon Graphics(1)       65     32%      17.7/31.9GB    90%      184W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>64000</td>
+        <td>15.468</td>
+        <td>96.636</td>
+        <td>2496</td>
+        <td>25.82</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx64000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    46 GB    100% GPU     64000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     0%       17.6/31.9GB    100%     83W
+AMD Radeon Graphics(1)       64     32%      18.2/31.9GB    59%      151W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>68000</td>
+        <td>15.619</td>
+        <td>79.298</td>
+        <td>2053</td>
+        <td>25.88</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx68000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    48 GB    100% GPU     68000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     31%      18.1/31.9GB    80%      174W
+AMD Radeon Graphics(1)       63     31%      18.8/31.9GB    47%      136W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>72000</td>
+        <td>15.399</td>
+        <td>87.917</td>
+        <td>2287</td>
+        <td>26.01</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx72000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    50 GB    100% GPU     72000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     32%      18.6/31.9GB    84%      178W
+AMD Radeon Graphics(1)       64     32%      19.3/31.9GB    84%      178W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>76000</td>
+        <td>15.429</td>
+        <td>90.042</td>
+        <td>2328</td>
+        <td>25.85</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx76000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    52 GB    100% GPU     76000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     32%      19.1/31.9GB    84%      179W
+AMD Radeon Graphics(1)       63     32%      19.9/31.9GB    62%      154W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>80000</td>
+        <td>15.409</td>
+        <td>101.129</td>
+        <td>2623</td>
+        <td>25.93</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx80000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    53 GB    100% GPU     80000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     0%       19.6/31.9GB    100%     80W
+AMD Radeon Graphics(1)       65     32%      20.4/31.9GB    90%      184W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>84000</td>
+        <td>15.500</td>
+        <td>99.818</td>
+        <td>2584</td>
+        <td>25.88</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx84000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    55 GB    100% GPU     84000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     33%      20.1/31.9GB    90%      183W
+AMD Radeon Graphics(1)       66     32%      21.0/31.9GB    90%      184W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>88000</td>
+        <td>15.494</td>
+        <td>87.074</td>
+        <td>2266</td>
+        <td>26.02</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx88000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    57 GB    100% GPU     88000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     32%      20.6/31.9GB    89%      181W
+AMD Radeon Graphics(1)       65     32%      21.5/31.9GB    89%      181W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>92000</td>
+        <td>15.500</td>
+        <td>91.370</td>
+        <td>2375</td>
+        <td>25.99</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx92000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    59 GB    100% GPU     92000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     33%      21.7/31.9GB    89%      186W
+AMD Radeon Graphics(1)       65     31%      21.4/31.9GB    89%      180W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:32b</td>
+        <td>96000</td>
+        <td>15.492</td>
+        <td>120.672</td>
+        <td>3118</td>
+        <td>25.83</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_32b_ctx96000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:32b    edba8017331d    60 GB    100% GPU     96000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     0%       22.2/31.9GB    100%     82W
+AMD Radeon Graphics(1)       67     32%      21.9/31.9GB    91%      186W    </pre></td>
+    </tr>
+
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>4000</td>
+        <td>24.245</td>
+        <td>207.580</td>
+        <td>2647</td>
+        <td>12.75</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx4000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    44 GB    100% GPU     4000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       63     32%      20.9/31.9GB    81%      164W
+AMD Radeon Graphics(1)       55     32%      21.0/31.9GB    65%      151W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>8000</td>
+        <td>22.442</td>
+        <td>162.051</td>
+        <td>2070</td>
+        <td>12.77</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx8000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    46 GB    100% GPU     8000       4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     36%      21.5/31.9GB    90%      182W
+AMD Radeon Graphics(1)       63     36%      21.6/31.9GB    90%      182W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>12000</td>
+        <td>22.000</td>
+        <td>202.213</td>
+        <td>2576</td>
+        <td>12.73</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx12000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    49 GB    100% GPU     12000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     37%      22.1/31.9GB    92%      186W
+AMD Radeon Graphics(1)       68     37%      22.3/31.9GB    92%      189W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>16000</td>
+        <td>22.137</td>
+        <td>200.863</td>
+        <td>2564</td>
+        <td>12.76</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx16000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    51 GB    100% GPU     16000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     37%      22.7/31.9GB    92%      187W
+AMD Radeon Graphics(1)       68     37%      22.9/31.9GB    92%      189W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>20000</td>
+        <td>22.201</td>
+        <td>207.866</td>
+        <td>2640</td>
+        <td>12.70</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx20000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    53 GB    100% GPU     20000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       66     0%       23.3/31.9GB    100%     83W
+AMD Radeon Graphics(1)       69     37%      23.6/31.9GB    92%      190W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>24000</td>
+        <td>22.017</td>
+        <td>178.888</td>
+        <td>2275</td>
+        <td>12.71</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx24000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    56 GB    100% GPU     24000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     36%      23.9/31.9GB    91%      184W
+AMD Radeon Graphics(1)       69     36%      24.2/31.9GB    91%      187W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>28000</td>
+        <td>22.258</td>
+        <td>194.958</td>
+        <td>2483</td>
+        <td>12.73</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx28000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    58 GB    100% GPU     28000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     36%      24.5/31.9GB    92%      185W
+AMD Radeon Graphics(1)       68     37%      24.9/31.9GB    92%      189W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>32000</td>
+        <td>22.075</td>
+        <td>176.809</td>
+        <td>2265</td>
+        <td>12.81</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx32000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    61 GB    100% GPU     32000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       64     0%       25.1/31.9GB    7%       37W
+AMD Radeon Graphics(1)       68     36%      25.5/31.9GB    49%      154W    </pre></td>
+    </tr>
+    <tr>
+        <td>deepseek-r1:70b</td>
+        <td>36000</td>
+        <td>22.426</td>
+        <td>210.766</td>
+        <td>2688</td>
+        <td>12.75</td>
+        <td><a href="/root/gpu_test/tetris_deepseek-r1_70b_ctx36000.html" target="_blank">View</a></td>
+        <td><pre>NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL
+deepseek-r1:70b    d37b54d01a76    63 GB    100% GPU     36000      4 minutes from now    </pre></td>
+        <td><pre>GPU                          Temp   Mem-Uti  Mem(GB)        GFX-Uti  Power
+AMD Radeon Graphics(0)       65     37%      25.7/31.9GB    90%      186W
+AMD Radeon Graphics(1)       68     0%       26.2/31.9GB    100%     85W     </pre></td>
+    </tr>
+</table></body></html>

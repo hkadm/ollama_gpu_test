@@ -35,3 +35,6 @@ Prompt: Generate Tetris game on HTML and JS.
 | 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | deepseek-r1:32b | 32.79 | 24 000 | 7.81 | 78.37 | Max Nvidia drivers version 535 and CUDA 12.2 |
 | 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | gpt-oss:20b | 120.65 | 128 000 | 6.07 | 23.25 | Max Nvidia drivers version 535 and CUDA 12.2 |
 | 2xNVIDIA Tesla V100-SXM2 | 2x16 GB | qwen3:14b | 59.70 | 52 000 | 4.38 | 160.83 | Max Nvidia drivers version 535 and CUDA 12.2 |
+| 2xAMD RADEON AI PRO R9700 | 2×32 GB | deepseek-r1:14b | 52.15 | 128 000 | 12.5 | 50.3 | |
+| 2xAMD RADEON AI PRO R9700 | 2×32 GB | deepseek-r1:32b | 25.90 | 96 000 | 15.2 | 92.1 |  |
+| 2xAMD RADEON AI PRO R9700 | 2×32 GB | deepseek-r1:70b | 12.75 | 36 000 | 22.3 | 191.2 |  |
