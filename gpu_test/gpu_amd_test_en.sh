@@ -13,7 +13,7 @@ MODEL_VRAM=(
     ["gpt-oss:120b"]="70"
     ["qwen3:14b"]="15"
     ["qwen3:32b"]="23"
-    ["qwen3-next:80b"]="59"
+    ["qwen3-next:80b"]="144"
     ["ministral-3:8b"]="7"
     ["ministral-3:14b"]="11"
 )
