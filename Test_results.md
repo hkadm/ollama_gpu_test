@@ -39,3 +39,4 @@ Prompt: Generate Tetris game on HTML and JS.
 | 2xAMD RADEON AI PRO R9700 | 2×32 GB | deepseek-r1:32b | 25.90 | 96 000 | 15.2 | 92.1 |  |
 | 2xAMD RADEON AI PRO R9700 | 2×32 GB | deepseek-r1:70b | 12.75 | 36 000 | 22.3 | 191.2 |  |
 | 3×AMD RADEON AI PRO R9700 | 3×32 GB | gpt-oss:120b | 60.75 | 128 000 | 21.05 | 57.34 | Mixture of Experts |
+| 3×AMD RADEON AI PRO R9700 | 3×32 GB | qwen3-coder-next:q8_0 | 33.82 | 128 000 | 20.84 | 90.03 | 84B, quantization Q8_0 |
