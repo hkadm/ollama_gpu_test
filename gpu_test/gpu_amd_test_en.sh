@@ -13,7 +13,7 @@ MODEL_VRAM=(
     ["gpt-oss:120b"]="70"
     ["qwen3:14b"]="15"
     ["qwen3:32b"]="23"
-    ["qwen3-next:80b"]="55"
+    ["qwen3-coder-next:q4_K_M"]="55"
     ["qwen3-coder-next:q8_0"]="87"
     ["ministral-3:8b"]="7"
     ["ministral-3:14b"]="11"
@@ -22,7 +22,7 @@ MODEL_VRAM=(
 declare -A MODEL_GROUPS
 MODEL_GROUPS["deepseekr1"]="deepseek-r1:14b deepseek-r1:32b deepseek-r1:70b"
 MODEL_GROUPS["gpt-oss"]="gpt-oss:20b gpt-oss:120b"
-MODEL_GROUPS["qwen3"]="qwen3:14b qwen3:32b qwen3-next:80b qwen3-coder-next:q8_0"
+MODEL_GROUPS["qwen3"]="qwen3:14b qwen3:32b qwen3-coder-next:q4_K_M qwen3-coder-next:q8_0"
 MODEL_GROUPS["ministral3"]="ministral-3:8b ministral-3:14b"
 
 # Validation: ensure all models in groups are defined in MODEL_VRAM
