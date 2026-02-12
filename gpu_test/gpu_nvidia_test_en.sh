@@ -13,7 +13,7 @@ MODEL_VRAM=(
     ["gpt-oss:120b"]="70"
     ["qwen3:14b"]="15"
     ["qwen3:32b"]="23"
-    ["qwen3-next:80b"]="144"
+    ["qwen3-next:80b"]="55"
     ["ministral-3:8b"]="7"
     ["ministral-3:14b"]="11"
 )
@@ -197,9 +197,16 @@ test_model() {
 
     echo "Warming up model..."
     curl -s http://localhost:11434/api/generate \
-      -H "Content-Type: application/json" \
-      -d '{"model":"'"$MODEL"'","prompt":"Hello","stream":false}' \
-      >/dev/null
+    -H "Content-Type: application/json" \
+    -d '{
+        "model": "'"$MODEL"'",
+        "prompt": "Hello",
+        "stream": false,
+        "options": {
+        "num_ctx": 4000
+        }
+    }' \
+    >/dev/null
 
     local model_results_html=""
     local first_ctx=""
