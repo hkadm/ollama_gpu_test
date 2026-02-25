@@ -127,7 +127,7 @@ display_models_menu() {
 # ─────────────────────────────────────────────────────────────────────────────
 
 echo -e "${YELLOW}⚠ IMPORTANT: Enter only the domain, NOT the full API URL${NC}"
-echo "Example: aichat.hostkey.in (NOT https://aichat.hostkey.in/api/chat/completions)"
+echo "Example: aichat.hostkey.in "
 echo ""
 
 read -p "Chatbot Domain (e.g., aichat.hostkey.in): " CHATBOT_DOMAIN
