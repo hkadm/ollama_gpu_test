@@ -20,34 +20,6 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-# Функция для безопасного чтения с терминала
-read_from_terminal() {
-    local prompt="$1"
-    local var_name="$2"
-    local default="${3:-}"
-    
-    if [[ -n "$default" ]]; then
-        prompt="$prompt [$default]: "
-    else
-        prompt="$prompt: "
-    fi
-    
-    # Читаем напрямую с терминала
-    if [[ -t 0 ]]; then
-        # stdin уже терминал
-        read -p "$prompt" "$var_name"
-    else
-        # Принудительно читаем с /dev/tty
-        echo -n "$prompt" > /dev/tty
-        read "$var_name" < /dev/tty
-    fi
-    
-    # Если ввели пустую строку, используем значение по умолчанию
-    if [[ -z "${!var_name}" && -n "$default" ]]; then
-        printf -v "$var_name" "%s" "$default"
-    fi
-}
-
 echo "=== HOSTKEY AI CHATBOT Agent Provider Setup ==="
 echo ""
 
@@ -158,7 +130,7 @@ echo -e "${YELLOW}⚠ IMPORTANT: Enter only the domain, NOT the full API URL${NC
 echo "Example: aichat.hostkey.in (NOT https://aichat.hostkey.in/api/chat/completions)"
 echo ""
 
-read_from_terminal "Chatbot Domain (e.g., aichat.hostkey.in)" CHATBOT_DOMAIN
+read -p "Chatbot Domain (e.g., aichat.hostkey.in): " CHATBOT_DOMAIN
 echo ""
 
 if [[ -z "$CHATBOT_DOMAIN" ]]; then
@@ -181,7 +153,7 @@ echo "Config baseUrl (with /v1): $CONFIG_BASE_URL"
 echo "Chat completions endpoint: $CONFIG_BASE_URL/chat/completions"
 echo ""
 
-read_from_terminal "API Key from OpenWebUI" API_KEY
+read -p "API Key from OpenWebUI: " API_KEY
 echo ""
 
 if [[ -z "$API_KEY" ]]; then
@@ -215,7 +187,7 @@ if [[ ${#MODELS_LIST[@]} -gt 0 ]]; then
     echo -e "${YELLOW}Select a model number or enter custom model ID${NC}"
     echo ""
 
-    read_from_terminal "Model selection (1-${#MODELS_LIST[@]} or custom ID)" MODEL_SELECTION
+    read -p "Model selection (1-${#MODELS_LIST[@]} or custom ID): " MODEL_SELECTION
     echo ""
 
     if [[ "$MODEL_SELECTION" =~ ^[0-9]+$ ]] && \
@@ -227,7 +199,7 @@ if [[ ${#MODELS_LIST[@]} -gt 0 ]]; then
         echo -e "${GREEN}✓ Selected: $MODEL_ID${NC}"
     else
         MODEL_ID="$MODEL_SELECTION"
-        read_from_terminal "Model Name (e.g., HOSTKEY AI)" MODEL_NAME
+        read -p "Model Name (e.g., HOSTKEY AI): " MODEL_NAME
         echo ""
         if [[ -z "$MODEL_NAME" ]]; then
             MODEL_NAME="$MODEL_ID"
@@ -242,7 +214,7 @@ else
     echo "  - Qwen3-32B"
     echo ""
 
-    read_from_terminal "Model ID (e.g., hostkeyru)" MODEL_ID
+    read -p "Model ID (e.g., hostkeyru): " MODEL_ID
     echo ""
 
     if [[ -z "$MODEL_ID" ]]; then
@@ -250,7 +222,7 @@ else
         exit 1
     fi
 
-    read_from_terminal "Model Name (e.g., HOSTKEY AI)" MODEL_NAME
+    read -p "Model Name (e.g., HOSTKEY AI): " MODEL_NAME
     echo ""
 
     if [[ -z "$MODEL_NAME" ]]; then
@@ -262,9 +234,11 @@ fi
 # Request for context parameters
 # ─────────────────────────────────────────────────────────────────────────────
 
-read_from_terminal "Context Window" CONTEXT_WINDOW 32000
+read -p "Context Window (default: 32000): " CONTEXT_WINDOW
+CONTEXT_WINDOW="${CONTEXT_WINDOW:-32000}"
 
-read_from_terminal "Max Tokens" MAX_TOKENS 16384
+read -p "Max Tokens (default: 16384): " MAX_TOKENS
+MAX_TOKENS="${MAX_TOKENS:-16384}"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Test request to API (using BASE_URL without /v1)
@@ -308,7 +282,7 @@ echo "  API Key:       ${API_KEY:0:20}..."
 echo "═══════════════════════════════════════════════════════════"
 echo ""
 
-read_from_terminal "Continue" CONFIRM "n"
+read -p "Continue? [y/N] " CONFIRM
 if [[ ! "$CONFIRM" =~ ^[Yy] ]]; then
     echo "Cancelled."
     exit 0
