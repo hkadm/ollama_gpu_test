@@ -3,7 +3,13 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Безопасное определение директории скрипта
+if [[ -n "${BASH_SOURCE[0]-}" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd 2>/dev/null || echo "$(pwd)")"
+else
+    SCRIPT_DIR="$(pwd)"
+fi
+
 CONFIG_FILE="${HOME}/.openclaw/openclaw.json"
 PROVIDER_ID="hostkey-agent-openwebui"
 
@@ -17,42 +23,22 @@ NC='\033[0m'
 echo "=== HOSTKEY AI CHATBOT Agent Provider Setup ==="
 echo ""
 
-ONBOARDING_RAN="false"
-
-# Uncomment for install Openclaw first
-
-#if ! command -v openclaw &> /dev/null; then
-#    echo "OpenClaw is not installed. Installing..."
-#    if ! command -v curl &> /dev/null; then
-#        echo -e "${RED}❌ Error: curl is required to install OpenClaw.${NC}"
-#        exit 1
-#    fi
-
-#    curl -fsSL https://openclaw.bot/install.sh   | bash
-#    ONBOARDING_RAN="true"
-
-    if ! command -v openclaw &> /dev/null; then
-        echo -e "${RED}❌ Error: OpenClaw was installed but is not on PATH.${NC}"
-        echo "Try: export PATH=\"\$(npm prefix -g)/bin:\$PATH\""
-        exit 1
-    fi
-#fi
+if ! command -v openclaw &> /dev/null; then
+    echo -e "${RED}❌ Error: OpenClaw was installed but is not on PATH.${NC}"
+    echo "Try: export PATH=\"\$(npm prefix -g)/bin:\$PATH\""
+    exit 1
+fi
 
 if [[ ! -f "$CONFIG_FILE" ]]; then
-    echo "OpenClaw config not found at $CONFIG_FILE"
-    if [[ "$ONBOARDING_RAN" != "true" ]]; then
-        echo "Running onboarding wizard..."
-        openclaw onboard --install-daemon
-        echo ""
-    fi
-    if [[ ! -f "$CONFIG_FILE" ]]; then
-        echo -e "${RED}❌ Error: OpenClaw config not found at $CONFIG_FILE${NC}"
-        exit 1
-    fi
+    echo -e "${RED}❌ Error: OpenClaw config not found at $CONFIG_FILE${NC}"
+    exit 1
 fi
 
 if ! command -v jq &> /dev/null; then
     echo -e "${RED}❌ Error: jq is required but not installed.${NC}"
+    echo "Install with: sudo apt install jq  # Debian/Ubuntu"
+    echo "           or sudo yum install jq  # CentOS/RHEL"
+    echo "           or brew install jq      # macOS"
     exit 1
 fi
 
@@ -141,7 +127,7 @@ display_models_menu() {
 # ─────────────────────────────────────────────────────────────────────────────
 
 echo -e "${YELLOW}⚠ IMPORTANT: Enter only the domain, NOT the full API URL${NC}"
-echo "Example: aichat.hostkey.in (NOT https://aichat.hostkey.in/api/chat/completions  )"
+echo "Example: aichat.hostkey.in (NOT https://aichat.hostkey.in/api/chat/completions)"
 echo ""
 
 read -p "Chatbot Domain (e.g., aichat.hostkey.in): " CHATBOT_DOMAIN
@@ -155,7 +141,7 @@ fi
 CHATBOT_DOMAIN="${CHATBOT_DOMAIN%/}"
 CHATBOT_DOMAIN="${CHATBOT_DOMAIN#https://}"
 CHATBOT_DOMAIN="${CHATBOT_DOMAIN#http://}"
-CHATBOT_DOMAIN="${CHATBOT_DOMAIN#*/}"
+CHATBOT_DOMAIN="${CHATBOT_DOMAIN%%/*}"
 
 # BASE_URL for internal API calls (without /v1)
 BASE_URL="https://${CHATBOT_DOMAIN}"
@@ -389,12 +375,16 @@ echo "Model reference: $PROVIDER_ID/$MODEL_ID"
 echo ""
 
 echo "Setting model as primary..."
-openclaw config set agents.defaults.model.primary "$PROVIDER_ID/$MODEL_ID"
+openclaw config set agents.defaults.model.primary "$PROVIDER_ID/$MODEL_ID" || {
+    echo -e "${YELLOW}⚠ Could not set primary model, continuing...${NC}"
+}
 echo -e "${GREEN}✓${NC} Model set as primary"
 echo ""
 
 echo "Restarting gateway..."
-openclaw gateway restart
+openclaw gateway restart || {
+    echo -e "${YELLOW}⚠ Could not restart gateway, continuing...${NC}"
+}
 echo -e "${GREEN}✓${NC} Gateway restarted"
 echo ""
 
@@ -402,4 +392,7 @@ echo -e "${BLUE}Waiting for gateway to start...${NC}"
 sleep 3
 
 echo "Launching TUI..."
-openclaw tui
+openclaw tui || {
+    echo "TUI failed to launch, but configuration was saved."
+    echo "You can manually run: openclaw tui"
+}
