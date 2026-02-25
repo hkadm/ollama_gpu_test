@@ -36,7 +36,7 @@ ONBOARDING_RAN="false"
         echo "Try: export PATH=\"\$(npm prefix -g)/bin:\$PATH\""
         exit 1
     fi
-fi
+#fi
 
 if [[ ! -f "$CONFIG_FILE" ]]; then
     echo "OpenClaw config not found at $CONFIG_FILE"
